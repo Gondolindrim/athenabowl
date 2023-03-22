@@ -2,13 +2,14 @@
 
 ## Introduction
 
-Athena is a tenkeyless (TKL) keyboard Printed Circuit Board (PCB) which main feature is the multi-layout support. Athena supports:
+Athena is a tenkeyless (TKL) keyboard Printed Circuit Board (PCB) which main feature is the multi-layout support. In its latest version, release Gamma, Athena supports:
 
 - 87 (F12) or 88 (F13) TKL function rows;
 - ANSI and ISO layouts
 - 7U and 6.25U spacebar bottom row layouts
 - Split backspace
 - Split right shift
+- "TK" layout with a numpad-like section for the navcluster, including alternatives with 2-unit keys.
 
 Below is a [Keyboard Layout Editor](http://keyboard-layout-editor.com/) image of the layouts Athena supports.
 
@@ -23,7 +24,7 @@ Both Apollo and Athena line of PCBs were designed to be "universal" TKL PCBs, th
 - Layout size: tenkeykess (TKL)
 - Compatible switches: MX-like only, solderable
 - Lighting: single colors per-key through-hole LEDs, RGB underglow
-- Microcontroller: STM32 family (see [the Joker topologyt documentaton](https://acheronproject.com/multimcu_article/multimcu_article/))
+- Microcontroller: STM32 family (see [the Joker topology documentaton](https://acheronproject.com/joker_mcus/joker/)
 - Connector: detachable USB Type C on the top side and JST connector for daughterboard support
 - Firmware compatibility: QMK (with VIA support)
 - Protection hardware:
