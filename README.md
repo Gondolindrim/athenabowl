@@ -13,7 +13,7 @@ Athena is a tenkeyless (TKL) keyboard Printed Circuit Board (PCB) which main fea
 
 Below is a [Keyboard Layout Editor](http://keyboard-layout-editor.com/) image of the layouts Athena supports. The KLE JSON file for this image is stored in the `resources` folder.
 
-![Athena KLE](resources/athena_gamma_kle.png)
+![Athena KLE](resources/athena-gamma_kle.png)
 
 Both Apollo and Athena line of PCBs were designed to be "universal" TKL PCBs, that is, designed to fit a wide variety of custom mechanical keyboards. The compatibility list is being built as more people check and test. See the **Keyboard compatibility** section of this README for the available list.
 
