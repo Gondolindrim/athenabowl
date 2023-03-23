@@ -15,14 +15,23 @@ Below is a [Keyboard Layout Editor](http://keyboard-layout-editor.com/) image of
 
 ![Athena KLE](resources/athena-gamma_kle.png)
 
-Both Apollo and Athena line of PCBs were designed to be "universal" TKL PCBs, that is, designed to fit a wide variety of custom mechanical keyboards. The compatibility list is being built as more people check and test. See the **Keyboard compatibility** section of this README for the available list.
+The Acheron line of TKL PCBs (Apollo, Athena and Themis) were designed to be "universal" TKL PCBs, that is, designed to fit a wide variety of custom mechanical keyboards, mainly based on the B87 PCB originally sold by the [winkey.kr store](https://winkeyless.kr/product/b-87-pcb-x2/). The compatibility list is being built as more people check and test. See the **Keyboard compatibility** section of this README for the list of keyboards compatible with the Athena.
+
+## Features
+
+Beyond its varied layout support and compatibility with a myriad of TKL PCBs, Athena also features:
+
+- In-switch lighting through single-color LED diodes;
+- Some of the in-switch LEDs work as indicators for Caps Lock, Num Lock and Scroll Lock. This functionality can be turned off in VIA, making the LEDs work as non-indicative LEDs;
+- RGB underglow (turned off by default);
+- Removable USB-C connector with support for the JST SM04B-SRSS connector;
 
 ## Technical information
 
 - Layout size: tenkeykess (TKL)
 - Compatible switches: MX-like only, solderable
 - Lighting: single colors per-key through-hole LEDs, RGB underglow
-- Microcontroller: STM32 family (see [the Joker topology documentation](https://acheronproject.com/joker_mcus/joker/)), originally intended for STM32F401RCT6
+- Microcontroller: STM32 family (see [the Joker topology documentation](https://acheronproject.com/joker_mcus/joker/)), originally intended for STM32F401RCT6;
 - Connector: detachable USB Type C on the top side and JST connector for daughterboard support
 - Firmware compatibility: QMK (with VIA support)
 - Protection hardware:
@@ -33,7 +42,7 @@ Both Apollo and Athena line of PCBs were designed to be "universal" TKL PCBs, th
   * LDO crowbar diode
   * EMI suppression (shielding ferrite bead)
   * Inrush current protection
-- Current release: release Alpha-RC1 (pre-release candidate)
+- Current release: release Gamma-RC1
 - Designer: Gondolindrim
 - License: Acheron Open-Source Hardware License version 1.4
 
@@ -42,6 +51,7 @@ Both Apollo and Athena line of PCBs were designed to be "universal" TKL PCBs, th
 ## Known compatibilities
 
 - **Geonworks F1-8X and F1-6X:** confirmed by Geon, who tested the PCB 3D files against the case 3D files. Live hardware testing into a machined case is pending.
+- **Geonworks Frog TKL** and its "K" variant;
 
 ### Known incompatibilities
 
