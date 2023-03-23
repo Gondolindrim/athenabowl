@@ -65,6 +65,6 @@ Beyond its varied layout support and compatibility with a myriad of TKL PCBs, At
 
 ## Copyright notice
 
-This project is released under the Acheron Open-Hardware License V1.3. For the license, please refer to the LICENCE.md file.
+This project is released under the Acheron Open-Hardware License V1.4. For the license, please refer to its [AcheronProject webpage](https://acheronproject.com/AOHL14/).
 
 The "athena with shield" logo was licensed through Adobe Stock in [this link](https://stock.adobe.com/hu/images/greek-goddess-athena-illustration/157297137); the source file in Adobe Illustrator format, with a converted ``.svg`` format  can be found in ``./resources/athena_logo``. The license was obtained in may 06, 2021 and allows the AcheronProject to redistribute the logo as open-source and allows anyone to sell the PCBs commercially, but it does not allow for reproduction, meaning that if you want to use the logo for your designs or products you will have to buy a license yourself.
