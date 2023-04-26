@@ -6,8 +6,8 @@
 
   (title_block
     (title "Athena PCB schematic")
-    (date "2022-04-10")
-    (rev "V2.1.8")
+    (date "2023-04-26")
+    (rev "V3.0.0")
     (company "Acheron Project")
     (comment 1 "Designed by Gondolindrim")
   )
@@ -41114,7 +41114,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Specification" "50V 1uF X7R ±10% 0805 MLCC" (at 498.475 113.03 0)
-      (effects (font (size 0.762 0.762)) (justify right))
+      (effects (font (size 0.762 0.762)) (justify right) hide)
     )
     (property "Manufacturer" "Guangdong Fenghua Advanced Tech" (at 501.65 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
