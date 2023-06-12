@@ -865,68 +865,6 @@
         )
       )
     )
-    (symbol "Device:Ferrite_Bead_Small" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "FB" (at 1.905 1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Ferrite_Bead_Small" (at 1.905 -1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "L ferrite bead inductor filter" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Ferrite bead, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Inductor_* L_* *Ferrite*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Ferrite_Bead_Small_0_1"
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 -0.7874)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0.889)
-            (xy 0 1.2954)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.8288 0.2794)
-            (xy -1.1176 1.4986)
-            (xy 1.8288 -0.2032)
-            (xy 1.1176 -1.4224)
-            (xy -1.8288 0.2794)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Ferrite_Bead_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Device:Fuse" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "F" (at 2.032 0 90)
         (effects (font (size 1.27 1.27)))
@@ -2676,6 +2614,46 @@
       (symbol "GND_1_1"
         (pin power_in line (at 0 0 270) (length 0) hide
           (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:GND1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "GND1" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GND1\" , ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "GND1_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "GND1_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GND1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -5504,7 +5482,7 @@
     (stroke (width 0) (type solid))
     (uuid 41f1eb6f-fd44-4429-9a08-0848d1a4dabb)
   )
-  (wire (pts (xy 76.835 184.15) (xy 76.835 185.42))
+  (wire (pts (xy 82.55 184.15) (xy 82.55 185.42))
     (stroke (width 0) (type solid))
     (uuid 4219cc87-1c81-4736-9dc9-826fc36ef2d8)
   )
@@ -6678,6 +6656,10 @@
   (wire (pts (xy 570.865 236.22) (xy 570.865 238.76))
     (stroke (width 0) (type solid))
     (uuid 7492e002-d5fe-405c-842a-0dd59522f5cf)
+  )
+  (wire (pts (xy 76.835 184.15) (xy 76.835 185.42))
+    (stroke (width 0) (type solid))
+    (uuid 74ad8f22-3d23-4557-a224-c5105cc32793)
   )
   (wire (pts (xy 602.615 287.02) (xy 602.615 289.56))
     (stroke (width 0) (type solid))
@@ -11667,7 +11649,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 380.365 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 01e4c044-97cb-40c7-b2e5-28fcc6da091e)
-    (property "Reference" "D28" (at 382.27 289.56 0)
+    (property "Reference" "D56" (at 382.27 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 382.27 292.1 0)
@@ -11704,7 +11686,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D28") (unit 1)
+          (reference "D56") (unit 1)
         )
       )
     )
@@ -12057,7 +12039,7 @@
   (symbol (lib_id "Device:R_Small") (at 386.715 610.87 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 03fbd999-de26-4c0d-a0cb-832dfe6c5227)
-    (property "Reference" "R161" (at 389.255 609.5999 0)
+    (property "Reference" "R162" (at 389.255 609.5999 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 389.255 612.1399 0)
@@ -12089,7 +12071,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R161") (unit 1)
+          (reference "R162") (unit 1)
         )
       )
     )
@@ -12326,7 +12308,7 @@
   (symbol (lib_id "Device:R_Small") (at 367.665 515.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07723cf6-b04d-4b9b-9b16-c2e59319c823)
-    (property "Reference" "R111" (at 370.205 514.9849 0)
+    (property "Reference" "R112" (at 370.205 514.9849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 370.205 517.5249 0)
@@ -12358,7 +12340,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R111") (unit 1)
+          (reference "R112") (unit 1)
         )
       )
     )
@@ -12471,7 +12453,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 08aee7a4-2565-48b9-bdfb-c8a2d0ef2ec7)
-    (property "Reference" "R20" (at 255.27 232.4099 0)
+    (property "Reference" "R21" (at 255.27 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 255.27 234.3149 0)
@@ -12503,7 +12485,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R20") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -12550,7 +12532,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 443.865 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09559ea2-143d-4e31-9308-65253afc9687)
-    (property "Reference" "D13" (at 445.77 238.76 0)
+    (property "Reference" "D27" (at 445.77 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 445.77 241.3 0)
@@ -12587,7 +12569,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D13") (unit 1)
+          (reference "D27") (unit 1)
         )
       )
     )
@@ -12700,7 +12682,7 @@
   (symbol (lib_id "Device:D") (at 844.55 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09eea382-1398-404d-8dfe-247f76e4d36a)
-    (property "Reference" "D54" (at 850.0302 275.59 0)
+    (property "Reference" "D38" (at 850.0302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 847.7315 275.59 0)
@@ -12735,7 +12717,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D54") (unit 1)
+          (reference "D38") (unit 1)
         )
       )
     )
@@ -12795,7 +12777,7 @@
   (symbol (lib_id "Device:R_Small") (at 291.465 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0b4bbe0c-8cee-4785-a6b5-94a2735bb755)
-    (property "Reference" "R125" (at 294.005 537.8449 0)
+    (property "Reference" "R126" (at 294.005 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 294.005 540.3849 0)
@@ -12827,7 +12809,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R125") (unit 1)
+          (reference "R126") (unit 1)
         )
       )
     )
@@ -12862,7 +12844,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 412.115 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0bc6a963-094c-4d03-b11c-ba13f9015c50)
-    (property "Reference" "D12" (at 414.02 238.76 0)
+    (property "Reference" "D26" (at 414.02 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 414.02 241.3 0)
@@ -12899,7 +12881,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D12") (unit 1)
+          (reference "D26") (unit 1)
         )
       )
     )
@@ -12959,7 +12941,7 @@
   (symbol (lib_id "Device:R_Small") (at 475.615 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c7f2ed6-7d5f-4ca9-a49a-3d22070f1438)
-    (property "Reference" "R45" (at 477.52 283.2099 0)
+    (property "Reference" "R46" (at 477.52 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 477.52 285.1149 0)
@@ -12991,7 +12973,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R45") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
     )
@@ -13182,7 +13164,7 @@
   (symbol (lib_id "Regulator_Linear:MCP1700-3302E_SOT23") (at 520.7 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0e671b11-bd28-4b1c-9377-a1404d1f08bf)
-    (property "Reference" "U6" (at 520.7 101.6 0)
+    (property "Reference" "U4" (at 520.7 101.6 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP1700T-3302E/TT" (at 520.7 103.505 0)
@@ -13218,7 +13200,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "U6") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
       (project "themis87h"
@@ -13278,7 +13260,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 316.865 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ee87fa1-2bf6-4909-a268-c480343c93e1)
-    (property "Reference" "D26" (at 318.77 289.56 0)
+    (property "Reference" "D54" (at 318.77 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 318.77 292.1 0)
@@ -13315,7 +13297,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D26") (unit 1)
+          (reference "D54") (unit 1)
         )
       )
     )
@@ -13488,7 +13470,7 @@
   (symbol (lib_id "Device:R_Small") (at 100.965 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 13062705-5ec5-48b3-aa24-4b0e89c9438b)
-    (property "Reference" "R82" (at 103.505 474.3449 0)
+    (property "Reference" "R83" (at 103.505 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 103.505 476.8849 0)
@@ -13520,7 +13502,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R82") (unit 1)
+          (reference "R83") (unit 1)
         )
       )
     )
@@ -13688,7 +13670,7 @@
   (symbol (lib_id "Device:R_Small") (at 386.715 515.62 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 157eaf7b-dd80-46ea-b883-612620792395)
-    (property "Reference" "R112" (at 389.255 514.3499 0)
+    (property "Reference" "R113" (at 389.255 514.3499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 389.255 516.8899 0)
@@ -13720,7 +13702,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R112") (unit 1)
+          (reference "R113") (unit 1)
         )
       )
     )
@@ -13845,7 +13827,7 @@
   (symbol (lib_id "Device:R_Small") (at 443.865 579.12 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 173502cf-2ad7-44b9-9a43-97f0b32bcdca)
-    (property "Reference" "R149" (at 446.405 577.8499 0)
+    (property "Reference" "R150" (at 446.405 577.8499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 446.405 580.3899 0)
@@ -13877,7 +13859,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R149") (unit 1)
+          (reference "R150") (unit 1)
         )
       )
     )
@@ -13886,7 +13868,7 @@
   (symbol (lib_id "Device:R_Small") (at 126.365 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17428140-be8c-46f3-a7a7-e391c0cfd372)
-    (property "Reference" "R34" (at 128.27 283.2099 0)
+    (property "Reference" "R35" (at 128.27 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 128.27 285.1149 0)
@@ -13918,7 +13900,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R34") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -14017,7 +13999,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.265 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 188ceca2-1624-4d12-be52-e069af6b196f)
-    (property "Reference" "R154" (at 217.805 601.3449 0)
+    (property "Reference" "R155" (at 217.805 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 217.805 603.8849 0)
@@ -14049,7 +14031,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R154") (unit 1)
+          (reference "R155") (unit 1)
         )
       )
     )
@@ -14084,7 +14066,7 @@
   (symbol (lib_id "Device:D") (at 971.55 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1a3022e7-e443-40af-ac0e-4f7d0791ee31)
-    (property "Reference" "D59" (at 977.0302 275.59 0)
+    (property "Reference" "D43" (at 977.0302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 974.7315 275.59 0)
@@ -14119,7 +14101,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D59") (unit 1)
+          (reference "D43") (unit 1)
         )
       )
     )
@@ -14128,7 +14110,7 @@
   (symbol (lib_id "Device:D") (at 769.62 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1a5e34ca-20b0-469c-ab68-24f0d6b3e063)
-    (property "Reference" "D37" (at 775.1002 237.49 0)
+    (property "Reference" "D4" (at 775.1002 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 772.8015 237.49 0)
@@ -14163,7 +14145,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D37") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -14290,31 +14272,6 @@
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
           (reference "#PWR0201") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 80.645 160.655 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1d7c2126-49c9-45f8-bca8-3a67a4bbc5bd)
-    (property "Reference" "#PWR035" (at 80.645 167.005 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 80.645 163.83 0)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "" (at 80.645 160.655 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 80.645 160.655 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 54e708c7-115f-4cf0-8803-3e646793bfac))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -14573,10 +14530,35 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 87.63 167.005 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 1fb9bb10-d636-4b47-942d-26580c1e852b)
+    (property "Reference" "#PWR039" (at 87.63 173.355 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 87.63 170.815 0)
+      (effects (font (size 0.7874 0.7874)))
+    )
+    (property "Footprint" "" (at 87.63 167.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 87.63 167.005 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b1ba421c-8bda-474e-a8ae-4a0633cdd150))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR039") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 139.065 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1fe1e800-65d9-4e11-9e8f-8b9ff7b2d535)
-    (property "Reference" "R84" (at 141.605 474.3449 0)
+    (property "Reference" "R85" (at 141.605 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 141.605 476.8849 0)
@@ -14608,7 +14590,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R84") (unit 1)
+          (reference "R85") (unit 1)
         )
       )
     )
@@ -14617,7 +14599,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.015 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20039910-fc40-409f-a74e-ef01589448f7)
-    (property "Reference" "R134" (at 122.555 578.4849 0)
+    (property "Reference" "R135" (at 122.555 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 122.555 581.0249 0)
@@ -14649,7 +14631,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R134") (unit 1)
+          (reference "R135") (unit 1)
         )
       )
     )
@@ -14764,7 +14746,7 @@
   (symbol (lib_id "Device:R_Small") (at 323.215 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 216dc391-d4db-4adf-add1-5af0ef45fa67)
-    (property "Reference" "R74" (at 325.755 442.5949 0)
+    (property "Reference" "R75" (at 325.755 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 325.755 445.1349 0)
@@ -14796,7 +14778,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R74") (unit 1)
+          (reference "R75") (unit 1)
         )
       )
     )
@@ -15140,7 +15122,7 @@
   (symbol (lib_id "Device:R_Small") (at 507.365 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23c81a84-11cb-499a-81f9-0e54d099d189)
-    (property "Reference" "R46" (at 509.27 283.2099 0)
+    (property "Reference" "R47" (at 509.27 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 509.27 285.1149 0)
@@ -15172,7 +15154,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R46") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
     )
@@ -15231,7 +15213,7 @@
   (symbol (lib_id "Device:R_Small") (at 602.615 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 24063663-8ac4-4ccd-9e18-70f8b503d46c)
-    (property "Reference" "R49" (at 604.52 283.2099 0)
+    (property "Reference" "R50" (at 604.52 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 604.52 285.1149 0)
@@ -15263,7 +15245,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R49") (unit 1)
+          (reference "R50") (unit 1)
         )
       )
     )
@@ -15310,7 +15292,7 @@
   (symbol (lib_id "Device:D") (at 1073.15 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2468fb98-1c11-4c1a-af22-e8312494c9ab)
-    (property "Reference" "D63" (at 1078.6302 275.59 0)
+    (property "Reference" "D47" (at 1078.6302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1076.3315 275.59 0)
@@ -15345,7 +15327,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D63") (unit 1)
+          (reference "D47") (unit 1)
         )
       )
     )
@@ -15657,7 +15639,7 @@
   (symbol (lib_id "Device:R_Small") (at 234.315 516.89 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2900e587-cee7-47e3-8232-76981f12e169)
-    (property "Reference" "R114" (at 236.855 517.5251 0)
+    (property "Reference" "R115" (at 236.855 517.5251 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 236.855 514.9851 0)
@@ -15689,7 +15671,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R114") (unit 1)
+          (reference "R115") (unit 1)
         )
       )
     )
@@ -15987,7 +15969,7 @@
   (symbol (lib_id "Device:R_Small") (at 100.965 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2d354345-c46b-4f50-b0bf-1ca4da1e0951)
-    (property "Reference" "R65" (at 103.505 442.5949 0)
+    (property "Reference" "R66" (at 103.505 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 103.505 445.1349 0)
@@ -16019,7 +16001,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R65") (unit 1)
+          (reference "R66") (unit 1)
         )
       )
     )
@@ -16105,7 +16087,7 @@
   (symbol (lib_id "Device:D") (at 971.55 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dac1558-76c3-4c28-b746-b021d04f07bd)
-    (property "Reference" "D45" (at 977.0302 237.49 0)
+    (property "Reference" "D12" (at 977.0302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 974.7315 237.49 0)
@@ -16140,7 +16122,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D45") (unit 1)
+          (reference "D12") (unit 1)
         )
       )
     )
@@ -16149,7 +16131,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 602.615 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2de3dbcd-f9c5-42e2-9434-c38160ef89c6)
-    (property "Reference" "D35" (at 604.52 289.56 0)
+    (property "Reference" "D63" (at 604.52 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 604.52 292.1 0)
@@ -16186,7 +16168,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D35") (unit 1)
+          (reference "D63") (unit 1)
         )
       )
     )
@@ -16236,7 +16218,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.115 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e1e2558-a7ff-451e-b6eb-b4c80f2640e8)
-    (property "Reference" "R136" (at 160.655 578.4849 0)
+    (property "Reference" "R137" (at 160.655 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 160.655 581.0249 0)
@@ -16268,7 +16250,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R136") (unit 1)
+          (reference "R137") (unit 1)
         )
       )
     )
@@ -16302,7 +16284,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 221.615 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e583204-2a6d-4ac0-b68d-4ad0e1cfba20)
-    (property "Reference" "D23" (at 223.52 289.56 0)
+    (property "Reference" "D51" (at 223.52 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 223.52 292.1 0)
@@ -16339,7 +16321,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D23") (unit 1)
+          (reference "D51") (unit 1)
         )
       )
     )
@@ -16549,7 +16531,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.115 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30fe2c55-7fcc-4241-9728-93e5694f9855)
-    (property "Reference" "R101" (at 160.655 507.3651 0)
+    (property "Reference" "R102" (at 160.655 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 160.655 504.8251 0)
@@ -16581,7 +16563,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R101") (unit 1)
+          (reference "R102") (unit 1)
         )
       )
     )
@@ -16641,7 +16623,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 570.865 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 32003d23-1979-443a-8226-12a82db4e064)
-    (property "Reference" "D34" (at 572.77 289.56 0)
+    (property "Reference" "D62" (at 572.77 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 572.77 292.1 0)
@@ -16678,7 +16660,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D34") (unit 1)
+          (reference "D62") (unit 1)
         )
       )
     )
@@ -16687,7 +16669,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 321191d0-971e-41fd-aa0a-dde3e2927eb0)
-    (property "Reference" "R140" (at 255.905 578.4849 0)
+    (property "Reference" "R141" (at 255.905 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 255.905 581.0249 0)
@@ -16719,7 +16701,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R140") (unit 1)
+          (reference "R141") (unit 1)
         )
       )
     )
@@ -17152,7 +17134,7 @@
   (symbol (lib_id "Device:D") (at 819.15 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39779b8b-c108-4f3c-bee0-e86bc45dbfa2)
-    (property "Reference" "D53" (at 824.6302 275.59 0)
+    (property "Reference" "D37" (at 824.6302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 822.3315 275.59 0)
@@ -17187,7 +17169,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D53") (unit 1)
+          (reference "D37") (unit 1)
         )
       )
     )
@@ -17265,7 +17247,7 @@
   (symbol (lib_id "Device:D") (at 920.75 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39be6de5-cf4a-4123-bd38-5bc4d4e0fd1f)
-    (property "Reference" "D43" (at 926.2302 237.49 0)
+    (property "Reference" "D10" (at 926.2302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 923.9315 237.49 0)
@@ -17300,7 +17282,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D43") (unit 1)
+          (reference "D10") (unit 1)
         )
       )
     )
@@ -17309,7 +17291,7 @@
   (symbol (lib_id "Device:R_Small") (at 272.415 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 39da5230-0999-4e5e-877c-b2c46bcd4852)
-    (property "Reference" "R141" (at 274.955 578.4849 0)
+    (property "Reference" "R142" (at 274.955 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 274.955 581.0249 0)
@@ -17341,7 +17323,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R141") (unit 1)
+          (reference "R142") (unit 1)
         )
       )
     )
@@ -17400,7 +17382,7 @@
   (symbol (lib_id "Device:R_Small") (at 291.465 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3a80f352-8312-4bc6-9b47-e1742c85b2d4)
-    (property "Reference" "R91" (at 294.005 474.3449 0)
+    (property "Reference" "R92" (at 294.005 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 294.005 476.8849 0)
@@ -17432,7 +17414,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R91") (unit 1)
+          (reference "R92") (unit 1)
         )
       )
     )
@@ -17557,6 +17539,31 @@
     )
   )
 
+  (symbol (lib_id "power:GND1") (at 82.55 184.15 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3b9e8172-b01e-4761-ace5-3d93e0ca1955)
+    (property "Reference" "#PWR0237" (at 82.55 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 82.55 179.705 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 82.55 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 82.55 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 31fd683f-73c2-4b42-889f-7f1b4563b9a0))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR0237") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "acheron_Symbols:LED") (at 177.165 547.37 270) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3babc797-9b6d-4e3b-92b3-9dc380eb3477)
@@ -17586,7 +17593,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 253.365 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3bdda606-7b4e-43c8-8d43-04bb10d3e65d)
-    (property "Reference" "D24" (at 255.27 289.56 0)
+    (property "Reference" "D52" (at 255.27 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 255.27 292.1 0)
@@ -17623,7 +17630,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D24") (unit 1)
+          (reference "D52") (unit 1)
         )
       )
     )
@@ -17657,7 +17664,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.265 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c177710-4931-4306-b05f-2e707ececcb6)
-    (property "Reference" "R139" (at 217.805 578.4849 0)
+    (property "Reference" "R140" (at 217.805 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 217.805 581.0249 0)
@@ -17689,7 +17696,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R139") (unit 1)
+          (reference "R140") (unit 1)
         )
       )
     )
@@ -17698,7 +17705,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c305c15-88c8-47cc-acf4-2e156f1ad9c2)
-    (property "Reference" "R155" (at 255.905 601.3449 0)
+    (property "Reference" "R156" (at 255.905 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 255.905 603.8849 0)
@@ -17730,7 +17737,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R155") (unit 1)
+          (reference "R156") (unit 1)
         )
       )
     )
@@ -17764,7 +17771,7 @@
   (symbol (lib_id "Device:R_Small") (at 412.115 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3d541eaa-f080-48c6-9cc0-1d8e612727f0)
-    (property "Reference" "R43" (at 414.02 283.2099 0)
+    (property "Reference" "R44" (at 414.02 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 414.02 285.1149 0)
@@ -17796,7 +17803,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R43") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -17805,7 +17812,7 @@
   (symbol (lib_id "Device:R_Small") (at 367.665 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3dc5cd43-ff87-41e6-a656-09db9eaf964f)
-    (property "Reference" "R95" (at 370.205 474.3449 0)
+    (property "Reference" "R96" (at 370.205 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 370.205 476.8849 0)
@@ -17837,7 +17844,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R95") (unit 1)
+          (reference "R96") (unit 1)
         )
       )
     )
@@ -18100,7 +18107,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 189.865 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 40ad2cbc-6f78-4738-9dd4-50576acb0b8b)
-    (property "Reference" "D5" (at 191.77 238.76 0)
+    (property "Reference" "D19" (at 191.77 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 191.77 241.3 0)
@@ -18137,7 +18144,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D5") (unit 1)
+          (reference "D19") (unit 1)
         )
       )
     )
@@ -18172,7 +18179,7 @@
   (symbol (lib_id "Device:D") (at 1022.35 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 41380350-466f-483a-a4dc-fad17117ccd1)
-    (property "Reference" "D47" (at 1027.8302 237.49 0)
+    (property "Reference" "D14" (at 1027.8302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1025.5315 237.49 0)
@@ -18207,7 +18214,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D47") (unit 1)
+          (reference "D14") (unit 1)
         )
       )
     )
@@ -18242,7 +18249,7 @@
   (symbol (lib_id "Device:R_Small") (at 279.4 412.75 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4217b6a8-cc1a-4b17-848f-f64ef49d33c1)
-    (property "Reference" "R59" (at 277.495 411.4799 0)
+    (property "Reference" "R60" (at 277.495 411.4799 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 277.495 413.3849 0)
@@ -18274,51 +18281,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R59") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Ferrite_Bead_Small") (at 76.835 181.61 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 421b13f9-6bbc-4b89-baca-c235bb3aaa06)
-    (property "Reference" "FB2" (at 80.2386 180.467 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "GZ2012D601TF" (at 80.2386 182.753 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Inductor_SMD:L_0805_2012Metric" (at 75.057 181.61 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer" "Sunlord" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Manufacturer Part Number" "GZ2012D601TF" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC Part Number" "" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Package" "L0805" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Specification" "600R @ 100MHz ferrite bead" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Vendor Part Number" "LCSC C1017" (at 76.835 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e2616615-40cb-4242-b6e9-4a7d2aecbe3b))
-    (pin "2" (uuid 22611b06-7c17-41cc-9337-1d008f639548))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "FB2") (unit 1)
+          (reference "R60") (unit 1)
         )
       )
     )
@@ -18365,7 +18328,7 @@
   (symbol (lib_id "Device:R_Small") (at 570.865 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 425d4c18-7daf-4fa9-9f25-facc3a1ce919)
-    (property "Reference" "R30" (at 572.77 232.4099 0)
+    (property "Reference" "R31" (at 572.77 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 572.77 234.3149 0)
@@ -18397,7 +18360,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R30") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -18406,7 +18369,7 @@
   (symbol (lib_id "Device:D") (at 895.35 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4266373b-dfe8-478f-88e2-2ac960bec94c)
-    (property "Reference" "D42" (at 900.8302 237.49 0)
+    (property "Reference" "D9" (at 900.8302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 898.5315 237.49 0)
@@ -18441,7 +18404,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D42") (unit 1)
+          (reference "D9") (unit 1)
         )
       )
     )
@@ -18735,7 +18698,7 @@
   (symbol (lib_id "Device:R_Small") (at 329.565 547.37 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 44d74c0d-3abc-4ebe-ae74-07239aefffcd)
-    (property "Reference" "R129" (at 332.105 546.0999 0)
+    (property "Reference" "R130" (at 332.105 546.0999 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 332.105 548.6399 0)
@@ -18767,7 +18730,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R129") (unit 1)
+          (reference "R130") (unit 1)
         )
       )
     )
@@ -19045,7 +19008,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.065 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48b21a4f-2692-4c83-871d-836601f26069)
-    (property "Reference" "R67" (at 141.605 442.5949 0)
+    (property "Reference" "R68" (at 141.605 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 141.605 445.1349 0)
@@ -19077,7 +19040,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R67") (unit 1)
+          (reference "R68") (unit 1)
         )
       )
     )
@@ -19086,7 +19049,7 @@
   (symbol (lib_id "Device:R_Small") (at 84.455 425.45 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48e242fe-7a87-42b7-a389-9cc3c50feebf)
-    (property "Reference" "R63" (at 84.455 420.37 90)
+    (property "Reference" "R64" (at 84.455 420.37 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100" (at 84.455 422.91 90)
@@ -19118,7 +19081,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R63") (unit 1)
+          (reference "R64") (unit 1)
         )
       )
     )
@@ -19144,6 +19107,31 @@
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
           (reference "#PWR0145") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND1") (at 65.405 115.57 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 490f41e4-b4d9-44d6-85f4-1b3661c0599f)
+    (property "Reference" "#PWR041" (at 71.755 115.57 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 69.215 115.57 90)
+      (effects (font (size 0.762 0.762)) (justify right))
+    )
+    (property "Footprint" "" (at 65.405 115.57 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 65.405 115.57 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f08c5a28-68ef-4685-b8cc-c5259eff0d94))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -19254,7 +19242,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 516.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4a29bf81-d0b9-4382-9ca8-cf450592e416)
-    (property "Reference" "R115" (at 351.155 516.2549 0)
+    (property "Reference" "R116" (at 351.155 516.2549 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 351.155 518.7949 0)
@@ -19286,7 +19274,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R115") (unit 1)
+          (reference "R116") (unit 1)
         )
       )
     )
@@ -19410,7 +19398,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d77da4e-8e3a-49b8-b4ed-0f5017df2b56)
-    (property "Reference" "R105" (at 255.905 507.3651 0)
+    (property "Reference" "R106" (at 255.905 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 255.905 504.8251 0)
@@ -19442,7 +19430,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R105") (unit 1)
+          (reference "R106") (unit 1)
         )
       )
     )
@@ -19567,7 +19555,7 @@
   (symbol (lib_id "Device:R_Small") (at 374.015 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4e8e100c-7016-410a-849d-d7b1d08aa6e0)
-    (property "Reference" "R76" (at 376.555 442.5949 0)
+    (property "Reference" "R77" (at 376.555 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 376.555 445.1349 0)
@@ -19599,7 +19587,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R76") (unit 1)
+          (reference "R77") (unit 1)
         )
       )
     )
@@ -19759,31 +19747,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 65.405 120.65 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 507d47a0-75d5-4b84-9a87-d0d71681b546)
-    (property "Reference" "#PWR025" (at 71.755 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 69.215 120.65 0)
-      (effects (font (size 0.7874 0.7874)))
-    )
-    (property "Footprint" "" (at 65.405 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 65.405 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0b474c2d-293a-4098-aa72-86d18e625c18))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR025") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 179.07 238.76 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50fd2a95-9e73-48eb-9f79-45a6751b0238)
@@ -19812,7 +19775,7 @@
   (symbol (lib_id "Device:R_Small") (at 189.865 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5103ccb8-a4d8-4568-9f44-0a8230d16433)
-    (property "Reference" "R36" (at 191.77 283.2099 0)
+    (property "Reference" "R37" (at 191.77 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 191.77 285.1149 0)
@@ -19844,7 +19807,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R36") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -20473,7 +20436,7 @@
   (symbol (lib_id "Device:D") (at 768.35 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 57170b09-8b1e-4cca-b8cd-f9cd43df8ec5)
-    (property "Reference" "D51" (at 773.8302 275.59 0)
+    (property "Reference" "D35" (at 773.8302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 771.5315 275.59 0)
@@ -20508,7 +20471,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D51") (unit 1)
+          (reference "D35") (unit 1)
         )
       )
     )
@@ -20682,7 +20645,7 @@
   (symbol (lib_id "Device:R_Small") (at 285.115 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59387508-b822-4b6e-a49c-52784db0dfc7)
-    (property "Reference" "R39" (at 287.02 283.2099 0)
+    (property "Reference" "R40" (at 287.02 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 287.02 285.1149 0)
@@ -20714,7 +20677,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R39") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -20775,7 +20738,7 @@
   (symbol (lib_id "Device:R_Small") (at 412.115 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59b5691f-65fe-4579-a866-5d859ce0cb88)
-    (property "Reference" "R25" (at 414.02 232.4099 0)
+    (property "Reference" "R26" (at 414.02 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 414.02 234.3149 0)
@@ -20807,7 +20770,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R25") (unit 1)
+          (reference "R26") (unit 1)
         )
       )
     )
@@ -20908,7 +20871,7 @@
   (symbol (lib_id "Device:R_Small") (at 400.05 406.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5b42a81f-f72c-4a63-8f79-3ade9d09ea8b)
-    (property "Reference" "R57" (at 400.05 401.32 90)
+    (property "Reference" "R58" (at 400.05 401.32 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 400.05 403.86 90)
@@ -20940,7 +20903,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R57") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
     )
@@ -21351,7 +21314,7 @@
   (symbol (lib_id "Device:R_Small") (at 273.05 406.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 60938a4f-26a6-4ad0-87e0-4d7fcdfa1970)
-    (property "Reference" "R55" (at 273.05 401.32 90)
+    (property "Reference" "R56" (at 273.05 401.32 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 273.05 403.86 90)
@@ -21383,7 +21346,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R55") (unit 1)
+          (reference "R56") (unit 1)
         )
       )
     )
@@ -21480,7 +21443,7 @@
   (symbol (lib_id "Device:R_Small") (at 259.715 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 611f9c7e-8983-45ef-a979-52fa7b242e45)
-    (property "Reference" "R71" (at 262.255 442.5949 0)
+    (property "Reference" "R72" (at 262.255 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 262.255 445.1349 0)
@@ -21512,7 +21475,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R71") (unit 1)
+          (reference "R72") (unit 1)
         )
       )
     )
@@ -21521,7 +21484,7 @@
   (symbol (lib_id "Device:D") (at 946.15 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 61e584c0-cd8a-4104-a500-af0a792e34a2)
-    (property "Reference" "D58" (at 951.6302 275.59 0)
+    (property "Reference" "D42" (at 951.6302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 949.3315 275.59 0)
@@ -21556,7 +21519,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D58") (unit 1)
+          (reference "D42") (unit 1)
         )
       )
     )
@@ -21628,7 +21591,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 632783c3-8e7d-4e6e-b059-26c68d7ea432)
-    (property "Reference" "R94" (at 351.155 474.3449 0)
+    (property "Reference" "R95" (at 351.155 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 351.155 476.8849 0)
@@ -21660,7 +21623,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R94") (unit 1)
+          (reference "R95") (unit 1)
         )
       )
     )
@@ -21975,7 +21938,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 656ad06a-bcb5-423d-9af0-3fcff3a23d18)
-    (property "Reference" "R123" (at 255.905 537.8449 0)
+    (property "Reference" "R124" (at 255.905 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 255.905 540.3849 0)
@@ -22007,7 +21970,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R123") (unit 1)
+          (reference "R124") (unit 1)
         )
       )
     )
@@ -22227,7 +22190,7 @@
   (symbol (lib_id "Device:R_Small") (at 443.865 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67952a09-1502-4d98-b257-379e95809eb9)
-    (property "Reference" "R26" (at 445.77 232.4099 0)
+    (property "Reference" "R27" (at 445.77 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 445.77 234.3149 0)
@@ -22259,7 +22222,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R26") (unit 1)
+          (reference "R27") (unit 1)
         )
       )
     )
@@ -22268,7 +22231,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 189.865 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 679aa60f-6a31-44b5-9685-6bd8424f336a)
-    (property "Reference" "D22" (at 191.77 289.56 0)
+    (property "Reference" "D50" (at 191.77 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 191.77 292.1 0)
@@ -22305,7 +22268,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D22") (unit 1)
+          (reference "D50") (unit 1)
         )
       )
     )
@@ -22339,7 +22302,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 602.615 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 67c622ef-82ab-4217-8e57-8ab42b6fb7bb)
-    (property "Reference" "D18" (at 604.52 238.76 0)
+    (property "Reference" "D32" (at 604.52 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 604.52 241.3 0)
@@ -22376,7 +22339,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D18") (unit 1)
+          (reference "D32") (unit 1)
         )
       )
     )
@@ -22385,7 +22348,7 @@
   (symbol (lib_id "Device:D") (at 946.15 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6836ba1a-b9ba-44bd-857b-145757a1769c)
-    (property "Reference" "D44" (at 951.6302 237.49 0)
+    (property "Reference" "D11" (at 951.6302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 949.3315 237.49 0)
@@ -22420,7 +22383,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D44") (unit 1)
+          (reference "D11") (unit 1)
         )
       )
     )
@@ -22429,7 +22392,7 @@
   (symbol (lib_id "Device:D") (at 1047.75 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 68385c27-6c59-4245-b183-7ff254f4956d)
-    (property "Reference" "D62" (at 1053.2302 275.59 0)
+    (property "Reference" "D46" (at 1053.2302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1050.9315 275.59 0)
@@ -22464,7 +22427,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D62") (unit 1)
+          (reference "D46") (unit 1)
         )
       )
     )
@@ -22685,7 +22648,7 @@
   (symbol (lib_id "Device:R_Small") (at 272.415 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 69b9f0d0-f238-460e-80e2-274490c43339)
-    (property "Reference" "R106" (at 274.955 507.3651 0)
+    (property "Reference" "R107" (at 274.955 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 274.955 504.8251 0)
@@ -22717,7 +22680,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R106") (unit 1)
+          (reference "R107") (unit 1)
         )
       )
     )
@@ -22770,7 +22733,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.015 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6a022b29-64ff-4c0d-9525-f376ad07b43d)
-    (property "Reference" "R83" (at 122.555 474.3449 0)
+    (property "Reference" "R84" (at 122.555 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 122.555 476.8849 0)
@@ -22802,7 +22765,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R83") (unit 1)
+          (reference "R84") (unit 1)
         )
       )
     )
@@ -22881,7 +22844,7 @@
   (symbol (lib_id "Device:D") (at 920.75 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a377590-d2cc-4040-9cca-0124e87d7124)
-    (property "Reference" "D57" (at 926.2302 275.59 0)
+    (property "Reference" "D41" (at 926.2302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 923.9315 275.59 0)
@@ -22916,7 +22879,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D57") (unit 1)
+          (reference "D41") (unit 1)
         )
       )
     )
@@ -22969,7 +22932,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.265 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6a6c6d27-fd38-4894-b6d7-b75c896e2b57)
-    (property "Reference" "R70" (at 217.805 442.5949 0)
+    (property "Reference" "R71" (at 217.805 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 217.805 445.1349 0)
@@ -23001,7 +22964,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R70") (unit 1)
+          (reference "R71") (unit 1)
         )
       )
     )
@@ -23061,7 +23024,7 @@
   (symbol (lib_id "Device:R_Small") (at 292.1 384.175 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6bfc5c77-1c07-44b7-988b-a7ae5b71bd1b)
-    (property "Reference" "R51" (at 294.005 385.4451 0)
+    (property "Reference" "R52" (at 294.005 385.4451 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 294.005 382.9051 0)
@@ -23093,7 +23056,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R51") (unit 1)
+          (reference "R52") (unit 1)
         )
       )
     )
@@ -23140,7 +23103,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 253.365 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6c76603b-8576-4b84-911a-c3e0cc5ea90c)
-    (property "Reference" "D7" (at 255.27 238.76 0)
+    (property "Reference" "D21" (at 255.27 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 255.27 241.3 0)
@@ -23177,7 +23140,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D7") (unit 1)
+          (reference "D21") (unit 1)
         )
       )
     )
@@ -23397,7 +23360,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 570.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ed17271-4483-4ce7-99ee-6427c09af948)
-    (property "Reference" "R132" (at 351.155 569.5949 0)
+    (property "Reference" "R133" (at 351.155 569.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 351.155 572.1349 0)
@@ -23429,7 +23392,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R132") (unit 1)
+          (reference "R133") (unit 1)
         )
       )
     )
@@ -23559,7 +23522,7 @@
   (symbol (lib_id "Device:R_Small") (at 399.415 452.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6fa0e0f6-4572-4419-873b-e5c1d957ed25)
-    (property "Reference" "R78" (at 401.955 451.4849 0)
+    (property "Reference" "R79" (at 401.955 451.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 401.955 454.0249 0)
@@ -23591,7 +23554,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R78") (unit 1)
+          (reference "R79") (unit 1)
         )
       )
     )
@@ -23752,7 +23715,7 @@
   (symbol (lib_id "Device:R_Small") (at 189.865 443.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71b0c00e-56b6-4d5e-b2db-484a33d4a43d)
-    (property "Reference" "R69" (at 192.405 442.5949 0)
+    (property "Reference" "R70" (at 192.405 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 192.405 445.1349 0)
@@ -23784,7 +23747,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R69") (unit 1)
+          (reference "R70") (unit 1)
         )
       )
     )
@@ -23956,7 +23919,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7386d805-e300-433c-8f1b-ea1a18af825a)
-    (property "Reference" "R75" (at 351.155 442.5949 0)
+    (property "Reference" "R76" (at 351.155 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 351.155 445.1349 0)
@@ -23988,7 +23951,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R75") (unit 1)
+          (reference "R76") (unit 1)
         )
       )
     )
@@ -24023,7 +23986,7 @@
   (symbol (lib_id "Device:R_Small") (at 424.815 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 743d8596-1fd0-4602-8987-eabaf7b8d321)
-    (property "Reference" "R148" (at 427.355 578.4849 0)
+    (property "Reference" "R149" (at 427.355 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 427.355 581.0249 0)
@@ -24055,7 +24018,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R148") (unit 1)
+          (reference "R149") (unit 1)
         )
       )
     )
@@ -24064,7 +24027,7 @@
   (symbol (lib_id "Device:R_Small") (at 418.465 452.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 745f9cee-eb0a-422d-b433-5fdba3b23e8d)
-    (property "Reference" "R79" (at 421.005 451.4849 0)
+    (property "Reference" "R80" (at 421.005 451.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 421.005 454.0249 0)
@@ -24096,7 +24059,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R79") (unit 1)
+          (reference "R80") (unit 1)
         )
       )
     )
@@ -24195,7 +24158,7 @@
   (symbol (lib_id "Device:R_Small") (at 443.865 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75056575-a221-4d5f-acbf-8d1647b550fc)
-    (property "Reference" "R44" (at 445.77 283.2099 0)
+    (property "Reference" "R45" (at 445.77 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 445.77 285.1149 0)
@@ -24227,7 +24190,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R44") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -24412,7 +24375,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.015 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76ea2d10-b5b6-4dbe-b0c5-3d423d1099d6)
-    (property "Reference" "R66" (at 122.555 442.5949 0)
+    (property "Reference" "R67" (at 122.555 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 122.555 445.1349 0)
@@ -24444,7 +24407,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R66") (unit 1)
+          (reference "R67") (unit 1)
         )
       )
     )
@@ -24495,7 +24458,7 @@
   (symbol (lib_id "Device:D") (at 1073.15 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 778cfc08-7f7f-4fc8-8fa9-2421bb2cb335)
-    (property "Reference" "D49" (at 1078.6302 237.49 0)
+    (property "Reference" "D16" (at 1078.6302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1076.3315 237.49 0)
@@ -24530,7 +24493,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D49") (unit 1)
+          (reference "D16") (unit 1)
         )
       )
     )
@@ -24621,7 +24584,7 @@
   (symbol (lib_id "Device:R_Small") (at 100.965 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 79d0b365-a15f-4dc6-99ff-59950b8ca449)
-    (property "Reference" "R133" (at 103.505 578.4849 0)
+    (property "Reference" "R134" (at 103.505 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 103.505 581.0249 0)
@@ -24653,7 +24616,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R133") (unit 1)
+          (reference "R134") (unit 1)
         )
       )
     )
@@ -24662,7 +24625,7 @@
   (symbol (lib_id "Device:R_Small") (at 177.165 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 79fee670-0a29-4a64-ae4d-771c4d27453d)
-    (property "Reference" "R137" (at 179.705 578.4849 0)
+    (property "Reference" "R138" (at 179.705 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 179.705 581.0249 0)
@@ -24694,7 +24657,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R137") (unit 1)
+          (reference "R138") (unit 1)
         )
       )
     )
@@ -24772,7 +24735,7 @@
   (symbol (lib_id "Device:R_Small") (at 272.415 538.48 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b54dd3b-5d94-40ac-8858-d03af0a159aa)
-    (property "Reference" "R124" (at 274.955 537.2099 0)
+    (property "Reference" "R125" (at 274.955 537.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 274.955 539.7499 0)
@@ -24804,7 +24767,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R124") (unit 1)
+          (reference "R125") (unit 1)
         )
       )
     )
@@ -24813,7 +24776,7 @@
   (symbol (lib_id "Device:D") (at 742.95 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7b9e9c40-a1b7-466c-a373-baf81a0db689)
-    (property "Reference" "D50" (at 748.4302 275.59 0)
+    (property "Reference" "D34" (at 748.4302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 746.1315 275.59 0)
@@ -24848,7 +24811,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D50") (unit 1)
+          (reference "D34") (unit 1)
         )
       )
     )
@@ -24857,7 +24820,7 @@
   (symbol (lib_id "Device:R_Small") (at 405.765 601.98 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7bdfd5f2-d2bf-4bff-8fd5-97aa53b59cbc)
-    (property "Reference" "R159" (at 408.305 602.6151 0)
+    (property "Reference" "R160" (at 408.305 602.6151 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 408.305 600.0751 0)
@@ -24889,7 +24852,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R159") (unit 1)
+          (reference "R160") (unit 1)
         )
       )
     )
@@ -24898,7 +24861,7 @@
   (symbol (lib_id "Device:D") (at 996.95 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c3f2506-ae80-44bf-b7e9-ff9f0b4e232d)
-    (property "Reference" "D46" (at 1002.4302 237.49 0)
+    (property "Reference" "D13" (at 1002.4302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1000.1315 237.49 0)
@@ -24933,7 +24896,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D46") (unit 1)
+          (reference "D13") (unit 1)
         )
       )
     )
@@ -24942,7 +24905,7 @@
   (symbol (lib_id "Device:R_Small") (at 177.165 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7c4bb8f7-7966-4b4c-a13e-51cde0677aff)
-    (property "Reference" "R153" (at 179.705 601.3449 0)
+    (property "Reference" "R154" (at 179.705 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 179.705 603.8849 0)
@@ -24974,7 +24937,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R153") (unit 1)
+          (reference "R154") (unit 1)
         )
       )
     )
@@ -25155,7 +25118,7 @@
   (symbol (lib_id "Device:R_Small") (at 189.865 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7fa97065-fc08-4934-90d4-44bf2833b7bf)
-    (property "Reference" "R18" (at 191.77 232.4099 0)
+    (property "Reference" "R19" (at 191.77 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 191.77 234.3149 0)
@@ -25187,7 +25150,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R18") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -25196,7 +25159,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.065 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7fe830db-e1a1-4e82-9b8d-bf6a34aafdfd)
-    (property "Reference" "R135" (at 141.605 578.4849 0)
+    (property "Reference" "R136" (at 141.605 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 141.605 581.0249 0)
@@ -25228,7 +25191,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R135") (unit 1)
+          (reference "R136") (unit 1)
         )
       )
     )
@@ -25344,7 +25307,7 @@
   (symbol (lib_id "Device:D") (at 869.95 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 81769c1d-7666-45cc-9c8a-a0450503f0d6)
-    (property "Reference" "D41" (at 875.4302 237.49 0)
+    (property "Reference" "D8" (at 875.4302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 873.1315 237.49 0)
@@ -25379,7 +25342,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D41") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
     )
@@ -25463,7 +25426,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.265 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 829e53b6-d440-4778-accd-567ebae4e706)
-    (property "Reference" "R88" (at 217.805 474.3449 0)
+    (property "Reference" "R89" (at 217.805 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 217.805 476.8849 0)
@@ -25495,7 +25458,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R88") (unit 1)
+          (reference "R89") (unit 1)
         )
       )
     )
@@ -25529,7 +25492,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.115 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 82d5822c-7e13-4c8f-a9d9-f65d00ab6caf)
-    (property "Reference" "R17" (at 160.02 232.4099 0)
+    (property "Reference" "R18" (at 160.02 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 160.02 234.3149 0)
@@ -25561,7 +25524,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R17") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -25686,7 +25649,7 @@
   (symbol (lib_id "Device:R_Small") (at 100.965 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 84ea6833-610a-4c7c-8dae-748848657395)
-    (property "Reference" "R116" (at 103.505 537.8449 0)
+    (property "Reference" "R117" (at 103.505 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 103.505 540.3849 0)
@@ -25718,7 +25681,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R116") (unit 1)
+          (reference "R117") (unit 1)
         )
       )
     )
@@ -25768,7 +25731,7 @@
   (symbol (lib_id "Device:D") (at 869.95 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 861fff55-74bd-4d68-a144-708ef001b111)
-    (property "Reference" "D55" (at 875.4302 275.59 0)
+    (property "Reference" "D39" (at 875.4302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 873.1315 275.59 0)
@@ -25803,7 +25766,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D55") (unit 1)
+          (reference "D39") (unit 1)
         )
       )
     )
@@ -25881,7 +25844,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 475.615 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 86a26c57-888d-4a79-b9cb-70ea654f981a)
-    (property "Reference" "D14" (at 477.52 238.76 0)
+    (property "Reference" "D28" (at 477.52 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 477.52 241.3 0)
@@ -25918,7 +25881,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D14") (unit 1)
+          (reference "D28") (unit 1)
         )
       )
     )
@@ -25977,7 +25940,7 @@
   (symbol (lib_id "Device:R_Small") (at 367.665 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 878a81e2-1784-4787-a2b9-2e983f398044)
-    (property "Reference" "R127" (at 370.205 537.8449 0)
+    (property "Reference" "R128" (at 370.205 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 370.205 540.3849 0)
@@ -26009,7 +25972,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R127") (unit 1)
+          (reference "R128") (unit 1)
         )
       )
     )
@@ -26069,7 +26032,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8889992c-501b-41c6-a27a-2cb26f5118b8)
-    (property "Reference" "R158" (at 351.155 601.3449 0)
+    (property "Reference" "R159" (at 351.155 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 351.155 603.8849 0)
@@ -26101,7 +26064,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R158") (unit 1)
+          (reference "R159") (unit 1)
         )
       )
     )
@@ -26189,7 +26152,7 @@
   (symbol (lib_id "Device:R_Small") (at 240.665 453.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8998ef12-b3fc-4f94-bf55-801ecf5e622f)
-    (property "Reference" "R81" (at 243.205 452.7549 0)
+    (property "Reference" "R82" (at 243.205 452.7549 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 243.205 455.2949 0)
@@ -26221,7 +26184,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R81") (unit 1)
+          (reference "R82") (unit 1)
         )
       )
     )
@@ -26549,7 +26512,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.115 538.48 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8d5899b6-1fd2-4753-ac93-da8529629858)
-    (property "Reference" "R119" (at 160.655 537.2099 0)
+    (property "Reference" "R120" (at 160.655 537.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 160.655 539.7499 0)
@@ -26581,7 +26544,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R119") (unit 1)
+          (reference "R120") (unit 1)
         )
       )
     )
@@ -26615,7 +26578,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.265 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8dd3accb-fd0a-48c8-b991-bfd1307086ac)
-    (property "Reference" "R104" (at 217.805 507.3651 0)
+    (property "Reference" "R105" (at 217.805 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 217.805 504.8251 0)
@@ -26647,7 +26610,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R104") (unit 1)
+          (reference "R105") (unit 1)
         )
       )
     )
@@ -26744,7 +26707,7 @@
   (symbol (lib_id "Device:R_Small") (at 634.365 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8e0f5889-71c1-4f6a-9266-2744ed188a9d)
-    (property "Reference" "R32" (at 636.27 232.4099 0)
+    (property "Reference" "R33" (at 636.27 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 636.27 234.3149 0)
@@ -26776,7 +26739,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R32") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
@@ -26949,7 +26912,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 90553ce3-f55d-4016-bd81-4401d80de00d)
-    (property "Reference" "R41" (at 350.52 283.2099 0)
+    (property "Reference" "R42" (at 350.52 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 350.52 285.1149 0)
@@ -26981,7 +26944,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R41") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -27069,7 +27032,7 @@
   (symbol (lib_id "Device:R_Small") (at 177.165 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 914da29c-8e33-45f4-b06d-9283323630ad)
-    (property "Reference" "R86" (at 179.705 474.3449 0)
+    (property "Reference" "R87" (at 179.705 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 179.705 476.8849 0)
@@ -27101,7 +27064,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R86") (unit 1)
+          (reference "R87") (unit 1)
         )
       )
     )
@@ -27110,7 +27073,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 221.615 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 91507b6b-0f23-428e-9f51-d48f7d68a5b9)
-    (property "Reference" "D6" (at 223.52 238.76 0)
+    (property "Reference" "D20" (at 223.52 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 223.52 241.3 0)
@@ -27147,7 +27110,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D6") (unit 1)
+          (reference "D20") (unit 1)
         )
       )
     )
@@ -27181,7 +27144,7 @@
   (symbol (lib_id "Device:R_Small") (at 329.565 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 92716e03-da77-4311-ad27-ef927fb5c029)
-    (property "Reference" "R144" (at 332.105 578.4849 0)
+    (property "Reference" "R145" (at 332.105 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 332.105 581.0249 0)
@@ -27213,7 +27176,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R144") (unit 1)
+          (reference "R145") (unit 1)
         )
       )
     )
@@ -27364,7 +27327,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 634.365 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 933fb0aa-0de5-4c87-be0d-dfc777ea9171)
-    (property "Reference" "D19" (at 636.27 238.76 0)
+    (property "Reference" "D33" (at 636.27 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 636.27 241.3 0)
@@ -27401,7 +27364,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D19") (unit 1)
+          (reference "D33") (unit 1)
         )
       )
     )
@@ -27461,7 +27424,7 @@
   (symbol (lib_id "Device:R_Small") (at 316.865 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 93ae2310-a174-4803-9d0a-6745bb3b40ca)
-    (property "Reference" "R22" (at 318.77 232.4099 0)
+    (property "Reference" "R23" (at 318.77 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 318.77 234.3149 0)
@@ -27493,7 +27456,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R22") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -27502,7 +27465,7 @@
   (symbol (lib_id "Device:R_Small") (at 100.965 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 93bb2719-a81e-406e-b062-cb9c2546bf51)
-    (property "Reference" "R151" (at 103.505 601.3449 0)
+    (property "Reference" "R152" (at 103.505 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 103.505 603.8849 0)
@@ -27534,7 +27497,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R151") (unit 1)
+          (reference "R152") (unit 1)
         )
       )
     )
@@ -27593,7 +27556,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 158.115 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95bb2f9b-0ca7-4cf8-ab8d-51835f7ea766)
-    (property "Reference" "D4" (at 160.02 238.76 0)
+    (property "Reference" "D18" (at 160.02 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 160.02 241.3 0)
@@ -27630,32 +27593,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 65.405 115.57 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 95f207cb-be9c-4a9b-8818-7e9097d43f80)
-    (property "Reference" "#PWR021" (at 71.755 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 69.215 115.57 0)
-      (effects (font (size 0.7874 0.7874)))
-    )
-    (property "Footprint" "" (at 65.405 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 65.405 115.57 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 94ff191b-9ccd-4245-8052-e3396bdf1de5))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR021") (unit 1)
+          (reference "D18") (unit 1)
         )
       )
     )
@@ -27664,7 +27602,7 @@
   (symbol (lib_id "Device:R_Small") (at 291.465 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 966b3376-7ab6-4bb0-864b-892b0ede974e)
-    (property "Reference" "R107" (at 294.005 507.3651 0)
+    (property "Reference" "R108" (at 294.005 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 294.005 504.8251 0)
@@ -27696,7 +27634,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R107") (unit 1)
+          (reference "R108") (unit 1)
         )
       )
     )
@@ -27941,7 +27879,7 @@
   (symbol (lib_id "Device:R_Small") (at 406.4 412.75 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 988fc6e1-e682-4f85-a0e2-1811ba0f48d4)
-    (property "Reference" "R61" (at 404.495 411.4799 0)
+    (property "Reference" "R62" (at 404.495 411.4799 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 404.495 413.3849 0)
@@ -27973,7 +27911,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R61") (unit 1)
+          (reference "R62") (unit 1)
         )
       )
     )
@@ -28032,7 +27970,7 @@
   (symbol (lib_id "Device:R_Small") (at 539.115 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 994a7bb0-b2d9-48ca-9d82-8d54831bcc16)
-    (property "Reference" "R29" (at 541.02 232.4099 0)
+    (property "Reference" "R30" (at 541.02 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 541.02 234.3149 0)
@@ -28064,7 +28002,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R29") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -28540,7 +28478,7 @@
   (symbol (lib_id "Device:R_Small") (at 69.85 419.1 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c6b8d36-f1c7-46e0-8de4-573a59623624)
-    (property "Reference" "R62" (at 67.945 417.8299 0)
+    (property "Reference" "R63" (at 67.945 417.8299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 67.945 419.7349 0)
@@ -28572,7 +28510,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R62") (unit 1)
+          (reference "R63") (unit 1)
         )
       )
     )
@@ -28598,6 +28536,31 @@
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
           (reference "#PWR0216") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND1") (at 76.835 185.42 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9dbf70e4-76a9-40d1-b689-e0bde4bb6e64)
+    (property "Reference" "#PWR0236" (at 76.835 191.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 76.835 189.23 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 76.835 185.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 76.835 185.42 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 85d9ea5c-272f-430b-9519-3379d625d8ee))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR0236") (unit 1)
         )
       )
     )
@@ -28820,7 +28783,7 @@
   (symbol (lib_id "Device:R_Small") (at 177.165 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9f0ce351-a060-4ae7-9c0e-b51c30098414)
-    (property "Reference" "R120" (at 179.705 537.8449 0)
+    (property "Reference" "R121" (at 179.705 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 179.705 540.3849 0)
@@ -28852,7 +28815,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R120") (unit 1)
+          (reference "R121") (unit 1)
         )
       )
     )
@@ -29037,10 +29000,35 @@
     )
   )
 
+  (symbol (lib_id "power:GND1") (at 41.91 171.45 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a02409d8-f952-45e4-8572-958cb3d34428)
+    (property "Reference" "#PWR021" (at 41.91 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 41.91 175.26 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 41.91 171.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 41.91 171.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4dee9907-7f81-44ee-a4b8-721f7e2842a8))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR021") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R_Small") (at 419.1 483.87 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a05e8428-9c2f-43af-9f7d-e72b6958d9e0)
-    (property "Reference" "R96" (at 421.005 482.5999 0)
+    (property "Reference" "R97" (at 421.005 482.5999 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 421.005 485.1399 0)
@@ -29072,7 +29060,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R96") (unit 1)
+          (reference "R97") (unit 1)
         )
       )
     )
@@ -29125,7 +29113,7 @@
   (symbol (lib_id "Device:R_Small") (at 405.765 579.12 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a0713369-b89f-4eba-bfa8-1e15ae3030db)
-    (property "Reference" "R147" (at 408.305 577.8499 0)
+    (property "Reference" "R148" (at 408.305 577.8499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 408.305 580.3899 0)
@@ -29157,7 +29145,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R147") (unit 1)
+          (reference "R148") (unit 1)
         )
       )
     )
@@ -29217,7 +29205,7 @@
   (symbol (lib_id "Device:R_Small") (at 602.615 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a24b49c7-d282-4163-a0cf-0bb8a7620a1b)
-    (property "Reference" "R31" (at 604.52 232.4099 0)
+    (property "Reference" "R32" (at 604.52 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 604.52 234.3149 0)
@@ -29249,7 +29237,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R31") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -29296,35 +29284,10 @@
     )
   )
 
-  (symbol (lib_id "power:GNDPWR") (at 822.96 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a27bd00d-ebca-4489-b3ac-c0cdbf0a21f2)
-    (property "Reference" "#PWR015" (at 822.96 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDPWR" (at 822.325 68.58 0)
-      (effects (font (size 0.508 0.508)))
-    )
-    (property "Footprint" "" (at 822.96 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 822.96 67.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f03d3223-3c61-4b91-84e1-a95d7cbf1db3))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR015") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:D") (at 819.15 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a2cfc896-3f6d-446e-b2dc-ece25615a6eb)
-    (property "Reference" "D39" (at 824.6302 237.49 0)
+    (property "Reference" "D6" (at 824.6302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 822.3315 237.49 0)
@@ -29359,7 +29322,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D39") (unit 1)
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -29642,7 +29605,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.015 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5052a3a-a77c-4175-9fc9-5ad7fa879d00)
-    (property "Reference" "R117" (at 122.555 537.8449 0)
+    (property "Reference" "R118" (at 122.555 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 122.555 540.3849 0)
@@ -29674,7 +29637,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R117") (unit 1)
+          (reference "R118") (unit 1)
         )
       )
     )
@@ -29709,7 +29672,7 @@
   (symbol (lib_id "Device:R_Small") (at 342.9 412.75 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a58a55cf-18fd-4412-95af-467bf025265c)
-    (property "Reference" "R60" (at 340.995 411.4799 0)
+    (property "Reference" "R61" (at 340.995 411.4799 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 340.995 413.3849 0)
@@ -29741,7 +29704,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R60") (unit 1)
+          (reference "R61") (unit 1)
         )
       )
     )
@@ -29819,7 +29782,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 507.365 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a6b47bc5-9caf-460f-a07b-4dedfe1ca74e)
-    (property "Reference" "D32" (at 509.27 289.56 0)
+    (property "Reference" "D60" (at 509.27 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 509.27 292.1 0)
@@ -29856,7 +29819,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D32") (unit 1)
+          (reference "D60") (unit 1)
         )
       )
     )
@@ -29891,7 +29854,7 @@
   (symbol (lib_id "Device:R_Small") (at 310.515 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a70a55a7-a1c4-4baf-a8f7-4c02571f61b1)
-    (property "Reference" "R108" (at 313.055 507.3651 0)
+    (property "Reference" "R109" (at 313.055 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 313.055 504.8251 0)
@@ -29923,7 +29886,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R108") (unit 1)
+          (reference "R109") (unit 1)
         )
       )
     )
@@ -29932,7 +29895,7 @@
   (symbol (lib_id "Device:R_Small") (at 234.315 538.48 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a74224ed-f731-497e-b397-b6b0df3e0791)
-    (property "Reference" "R122" (at 236.855 537.2099 0)
+    (property "Reference" "R123" (at 236.855 537.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 236.855 539.7499 0)
@@ -29964,7 +29927,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R122") (unit 1)
+          (reference "R123") (unit 1)
         )
       )
     )
@@ -30115,7 +30078,7 @@
   (symbol (lib_id "Device:R_Small") (at 272.415 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a82fcb93-2570-4183-8154-e2f77fd6a28c)
-    (property "Reference" "R156" (at 274.955 601.3449 0)
+    (property "Reference" "R157" (at 274.955 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 274.955 603.8849 0)
@@ -30147,7 +30110,48 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R156") (unit 1)
+          (reference "R157") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 76.835 181.61 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a86c95e2-5e3e-4bcd-99a6-097437e9bbf3)
+    (property "Reference" "R16" (at 74.93 181.61 90)
+      (effects (font (size 0.7874 0.7874)))
+    )
+    (property "Value" "0R" (at 76.835 181.61 90)
+      (effects (font (size 0.7874 0.7874)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Package" "R0805" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer" "Uniroyal" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Manufacturer Part Number" "RC0805JR-070RP" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Specification" "1/16W Thick Film Resistors 0805" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Vendor Part Number" "LCSC C2074762" (at 76.835 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c5cfaae3-b774-469e-9e88-d7ada43b7186))
+    (pin "2" (uuid dd0852f7-f985-4c7e-b7b0-4f5503bf5514))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -30156,7 +30160,7 @@
   (symbol (lib_id "Device:R_Small") (at 164.465 443.23 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a9279ca6-55fb-40f3-89d3-bd6aeb1b816c)
-    (property "Reference" "R68" (at 167.005 442.5949 0)
+    (property "Reference" "R69" (at 167.005 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 167.005 445.1349 0)
@@ -30188,7 +30192,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R68") (unit 1)
+          (reference "R69") (unit 1)
         )
       )
     )
@@ -30537,7 +30541,7 @@
   (symbol (lib_id "Device:R_Small") (at 177.165 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab5fcf71-e01f-49b7-84ca-911461084800)
-    (property "Reference" "R102" (at 179.705 507.3651 0)
+    (property "Reference" "R103" (at 179.705 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 179.705 504.8251 0)
@@ -30569,7 +30573,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R102") (unit 1)
+          (reference "R103") (unit 1)
         )
       )
     )
@@ -30753,7 +30757,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.065 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid adb6fefe-fa38-499d-a5b7-2d2ca41d4b84)
-    (property "Reference" "R118" (at 141.605 537.8449 0)
+    (property "Reference" "R119" (at 141.605 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 141.605 540.3849 0)
@@ -30785,7 +30789,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R118") (unit 1)
+          (reference "R119") (unit 1)
         )
       )
     )
@@ -30889,7 +30893,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 547.37 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b0542c58-df38-4cc8-91e8-04965aafdcad)
-    (property "Reference" "R130" (at 351.155 546.0999 0)
+    (property "Reference" "R131" (at 351.155 546.0999 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 351.155 548.6399 0)
@@ -30921,7 +30925,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R130") (unit 1)
+          (reference "R131") (unit 1)
         )
       )
     )
@@ -31031,7 +31035,7 @@
   (symbol (lib_id "Device:R_Small") (at 221.615 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b13a31d2-ac31-4087-9629-540331ce1d4b)
-    (property "Reference" "R37" (at 223.52 283.2099 0)
+    (property "Reference" "R38" (at 223.52 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 223.52 285.1149 0)
@@ -31063,7 +31067,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R37") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -31072,7 +31076,7 @@
   (symbol (lib_id "Device:R_Small") (at 475.615 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b19e3f94-1dd1-4a1a-a439-e9088dfbb8bc)
-    (property "Reference" "R27" (at 477.52 232.4099 0)
+    (property "Reference" "R28" (at 477.52 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 477.52 234.3149 0)
@@ -31104,7 +31108,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R27") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -31267,7 +31271,7 @@
   (symbol (lib_id "Device:R_Small") (at 386.715 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b21ec3d0-d427-4c25-9449-565cd940bfc6)
-    (property "Reference" "R146" (at 389.255 578.4849 0)
+    (property "Reference" "R147" (at 389.255 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 389.255 581.0249 0)
@@ -31299,7 +31303,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R146") (unit 1)
+          (reference "R147") (unit 1)
         )
       )
     )
@@ -31308,7 +31312,7 @@
   (symbol (lib_id "Device:R_Small") (at 196.215 548.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b228a23f-b746-4b7e-b076-a7e22154558f)
-    (property "Reference" "R131" (at 198.755 548.0049 0)
+    (property "Reference" "R132" (at 198.755 548.0049 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 198.755 550.5449 0)
@@ -31340,7 +31344,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R131") (unit 1)
+          (reference "R132") (unit 1)
         )
       )
     )
@@ -31349,7 +31353,7 @@
   (symbol (lib_id "Device:D") (at 1022.35 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b2493dd4-b9f8-4b27-bc9f-3d311bead3aa)
-    (property "Reference" "D61" (at 1027.8302 275.59 0)
+    (property "Reference" "D45" (at 1027.8302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1025.5315 275.59 0)
@@ -31384,7 +31388,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D61") (unit 1)
+          (reference "D45") (unit 1)
         )
       )
     )
@@ -31393,7 +31397,7 @@
   (symbol (lib_id "Device:R_Small") (at 196.215 579.12 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b25523ce-4a9a-4ebe-babf-37bc229b61de)
-    (property "Reference" "R138" (at 198.755 577.8499 0)
+    (property "Reference" "R139" (at 198.755 577.8499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 198.755 580.3899 0)
@@ -31425,7 +31429,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R138") (unit 1)
+          (reference "R139") (unit 1)
         )
       )
     )
@@ -31478,7 +31482,7 @@
   (symbol (lib_id "Device:R_Small") (at 367.665 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b2eb0ec3-12ff-418e-b809-442bd8cc58d5)
-    (property "Reference" "R145" (at 370.205 578.4849 0)
+    (property "Reference" "R146" (at 370.205 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 370.205 581.0249 0)
@@ -31510,7 +31514,32 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R145") (unit 1)
+          (reference "R146") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND1") (at 35.56 170.18 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b30478c5-7184-4d2a-977d-69e7ea68c3c1)
+    (property "Reference" "#PWR025" (at 35.56 176.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 35.56 173.99 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 35.56 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 35.56 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 61009b2c-e034-4256-a73c-3a11aa5c9f0e))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -31544,7 +31573,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 443.865 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b33973d7-89c7-4bba-9a50-4081b27f3537)
-    (property "Reference" "D30" (at 445.77 289.56 0)
+    (property "Reference" "D58" (at 445.77 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 445.77 292.1 0)
@@ -31581,7 +31610,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D30") (unit 1)
+          (reference "D58") (unit 1)
         )
       )
     )
@@ -31628,7 +31657,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 126.365 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b359b9a9-ac4a-4e07-aafe-a26512844a21)
-    (property "Reference" "D20" (at 128.27 289.56 0)
+    (property "Reference" "D48" (at 128.27 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 128.27 292.1 0)
@@ -31665,7 +31694,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D20") (unit 1)
+          (reference "D48") (unit 1)
         )
       )
     )
@@ -31674,7 +31703,7 @@
   (symbol (lib_id "Device:R_Small") (at 380.365 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b3edcc26-e21a-4878-8ffd-22edef360967)
-    (property "Reference" "R24" (at 382.27 232.4099 0)
+    (property "Reference" "R25" (at 382.27 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 382.27 234.3149 0)
@@ -31706,7 +31735,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R24") (unit 1)
+          (reference "R25") (unit 1)
         )
       )
     )
@@ -31715,7 +31744,7 @@
   (symbol (lib_id "Device:R_Small") (at 419.1 384.175 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b45bdde0-c901-4b60-9528-b85b421c7d6a)
-    (property "Reference" "R52" (at 421.64 383.5399 0)
+    (property "Reference" "R53" (at 421.64 383.5399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 421.64 386.0799 0)
@@ -31747,7 +31776,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R52") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
     )
@@ -31868,7 +31897,7 @@
   (symbol (lib_id "Device:R_Small") (at 126.365 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b5fd9a56-785e-4d35-9978-06c0a55d36a1)
-    (property "Reference" "R16" (at 128.27 232.4099 0)
+    (property "Reference" "R17" (at 128.27 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 128.27 234.3149 0)
@@ -31900,7 +31929,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R16") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -31972,7 +32001,7 @@
   (symbol (lib_id "Device:D") (at 996.95 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b66f62f2-b788-41e6-891e-b58bd30f31ab)
-    (property "Reference" "D60" (at 1002.4302 275.59 0)
+    (property "Reference" "D44" (at 1002.4302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1000.1315 275.59 0)
@@ -32007,7 +32036,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D60") (unit 1)
+          (reference "D44") (unit 1)
         )
       )
     )
@@ -32016,7 +32045,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b67e106a-8289-4a33-93cd-b06f6a2fb1cb)
-    (property "Reference" "R89" (at 255.905 474.3449 0)
+    (property "Reference" "R90" (at 255.905 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 255.905 476.8849 0)
@@ -32048,7 +32077,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R89") (unit 1)
+          (reference "R90") (unit 1)
         )
       )
     )
@@ -32082,7 +32111,7 @@
   (symbol (lib_id "Device:R_Small") (at 437.515 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6bb32d6-2844-4c7d-b175-8bc947875d63)
-    (property "Reference" "R160" (at 440.055 601.3449 0)
+    (property "Reference" "R161" (at 440.055 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 440.055 603.8849 0)
@@ -32114,7 +32143,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R160") (unit 1)
+          (reference "R161") (unit 1)
         )
       )
     )
@@ -32277,7 +32306,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 348.615 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b7b7a01b-881b-4d2a-8dfc-18496c2238ad)
-    (property "Reference" "D27" (at 350.52 289.56 0)
+    (property "Reference" "D55" (at 350.52 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 350.52 292.1 0)
@@ -32314,7 +32343,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D27") (unit 1)
+          (reference "D55") (unit 1)
         )
       )
     )
@@ -32392,7 +32421,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 475.615 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b983dc7b-af86-4e56-99df-b894f7c8d7c3)
-    (property "Reference" "D31" (at 477.52 289.56 0)
+    (property "Reference" "D59" (at 477.52 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 477.52 292.1 0)
@@ -32429,7 +32458,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D31") (unit 1)
+          (reference "D59") (unit 1)
         )
       )
     )
@@ -32450,7 +32479,7 @@
     (property "Datasheet" "" (at 76.835 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7dc59392-fadc-40ec-97aa-281c2a310512))
+    (pin "1" (uuid 385abe6b-1aae-471d-90da-d66926e6ad04))
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
@@ -32463,7 +32492,7 @@
   (symbol (lib_id "Device:R_Small") (at 336.55 406.4 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b9f86cd0-4919-4e7b-b78c-92f869ed00aa)
-    (property "Reference" "R56" (at 336.55 401.32 90)
+    (property "Reference" "R57" (at 336.55 401.32 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 336.55 403.86 90)
@@ -32495,32 +32524,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R56") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 41.91 171.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid baaf88dc-30b0-425f-a9a6-fff235b291ee)
-    (property "Reference" "#PWR041" (at 41.91 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 41.91 175.26 0)
-      (effects (font (size 0.7874 0.7874)))
-    )
-    (property "Footprint" "" (at 41.91 171.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 41.91 171.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 77f82b1d-282d-47f4-b5f4-6a3d1b4f04a8))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR041") (unit 1)
+          (reference "R57") (unit 1)
         )
       )
     )
@@ -32529,7 +32533,7 @@
   (symbol (lib_id "Device:R_Small") (at 120.015 506.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bab23800-e536-4353-adbd-93414973e37a)
-    (property "Reference" "R99" (at 122.555 506.0949 0)
+    (property "Reference" "R100" (at 122.555 506.0949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 122.555 508.6349 0)
@@ -32561,7 +32565,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R99") (unit 1)
+          (reference "R100") (unit 1)
         )
       )
     )
@@ -32570,7 +32574,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.065 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bae006dd-a23f-4d5e-a27b-304b7df75e3c)
-    (property "Reference" "R152" (at 141.605 601.3449 0)
+    (property "Reference" "R153" (at 141.605 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 141.605 603.8849 0)
@@ -32602,7 +32606,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R152") (unit 1)
+          (reference "R153") (unit 1)
         )
       )
     )
@@ -32674,7 +32678,7 @@
   (symbol (lib_id "Device:R_Small") (at 456.565 452.12 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb882f06-22cd-40ee-a63f-adff704154ba)
-    (property "Reference" "R80" (at 459.105 450.8499 0)
+    (property "Reference" "R81" (at 459.105 450.8499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1k" (at 459.105 453.3899 0)
@@ -32706,7 +32710,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R80") (unit 1)
+          (reference "R81") (unit 1)
         )
       )
     )
@@ -32715,7 +32719,7 @@
   (symbol (lib_id "Device:D") (at 1047.75 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb926a89-7793-4713-8cd2-ca33f2ffde15)
-    (property "Reference" "D48" (at 1053.2302 237.49 0)
+    (property "Reference" "D15" (at 1053.2302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 1050.9315 237.49 0)
@@ -32750,7 +32754,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D48") (unit 1)
+          (reference "D15") (unit 1)
         )
       )
     )
@@ -33017,7 +33021,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 316.865 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bdc4dc78-c6d0-4de1-b7d9-e2feea828ae2)
-    (property "Reference" "D9" (at 318.77 238.76 0)
+    (property "Reference" "D23" (at 318.77 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 318.77 241.3 0)
@@ -33054,7 +33058,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D9") (unit 1)
+          (reference "D23") (unit 1)
         )
       )
     )
@@ -33214,7 +33218,7 @@
   (symbol (lib_id "Device:R_Small") (at 100.965 506.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c0214dfd-868e-476a-bbb0-304224d544f6)
-    (property "Reference" "R98" (at 103.505 506.0949 0)
+    (property "Reference" "R99" (at 103.505 506.0949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 103.505 508.6349 0)
@@ -33246,7 +33250,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R98") (unit 1)
+          (reference "R99") (unit 1)
         )
       )
     )
@@ -33483,7 +33487,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.115 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c2072c40-157d-4bd6-9703-6bb8a4d4cb5b)
-    (property "Reference" "R35" (at 160.02 283.2099 0)
+    (property "Reference" "R36" (at 160.02 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 160.02 285.1149 0)
@@ -33515,7 +33519,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R35") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -33601,7 +33605,7 @@
   (symbol (lib_id "Device:R_Small") (at 380.365 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c379a0ca-1b69-486f-9486-455bba8aefd2)
-    (property "Reference" "R42" (at 382.27 283.2099 0)
+    (property "Reference" "R43" (at 382.27 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 382.27 285.1149 0)
@@ -33633,7 +33637,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R42") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -33904,7 +33908,7 @@
   (symbol (lib_id "Device:R_Small") (at 234.315 485.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c830e221-fa43-4e08-b869-60868e47d541)
-    (property "Reference" "R97" (at 236.855 484.5049 0)
+    (property "Reference" "R98" (at 236.855 484.5049 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 236.855 487.0449 0)
@@ -33936,7 +33940,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R97") (unit 1)
+          (reference "R98") (unit 1)
         )
       )
     )
@@ -34061,7 +34065,7 @@
   (symbol (lib_id "Device:D") (at 844.55 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c947a37f-249f-4f30-b722-bda27286e955)
-    (property "Reference" "D40" (at 850.0302 237.49 0)
+    (property "Reference" "D7" (at 850.0302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 847.7315 237.49 0)
@@ -34096,7 +34100,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D40") (unit 1)
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -34130,7 +34134,7 @@
   (symbol (lib_id "Device:R_Small") (at 196.215 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c99b6805-1174-4d11-ab2c-7a5a3a58cb30)
-    (property "Reference" "R87" (at 198.755 474.3449 0)
+    (property "Reference" "R88" (at 198.755 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 198.755 476.8849 0)
@@ -34162,7 +34166,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R87") (unit 1)
+          (reference "R88") (unit 1)
         )
       )
     )
@@ -34197,7 +34201,7 @@
   (symbol (lib_id "Device:R_Small") (at 209.55 406.4 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca2a2b11-7bdf-4f0d-a882-d122658d6702)
-    (property "Reference" "R54" (at 209.55 411.48 90)
+    (property "Reference" "R55" (at 209.55 411.48 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 209.55 408.94 90)
@@ -34229,7 +34233,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R54") (unit 1)
+          (reference "R55") (unit 1)
         )
       )
     )
@@ -34481,7 +34485,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 570.865 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cb726a5f-b1d9-4130-8900-b99cb48e97dc)
-    (property "Reference" "D17" (at 572.77 238.76 0)
+    (property "Reference" "D31" (at 572.77 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 572.77 241.3 0)
@@ -34518,7 +34522,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D17") (unit 1)
+          (reference "D31") (unit 1)
         )
       )
     )
@@ -34697,7 +34701,7 @@
   (symbol (lib_id "Device:R_Small") (at 507.365 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ccb3134e-c2f1-4aea-a47a-c06f3cb8e0be)
-    (property "Reference" "R28" (at 509.27 232.4099 0)
+    (property "Reference" "R29" (at 509.27 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 509.27 234.3149 0)
@@ -34729,7 +34733,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R28") (unit 1)
+          (reference "R29") (unit 1)
         )
       )
     )
@@ -34826,7 +34830,7 @@
   (symbol (lib_id "Device:R_Small") (at 50.8 438.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cefce47e-3172-4df6-b48e-15f6d495654a)
-    (property "Reference" "R64" (at 50.8 433.07 90)
+    (property "Reference" "R65" (at 50.8 433.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100" (at 50.8 435.61 90)
@@ -34858,7 +34862,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R64") (unit 1)
+          (reference "R65") (unit 1)
         )
       )
     )
@@ -34867,7 +34871,7 @@
   (symbol (lib_id "Device:R_Small") (at 539.115 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf4969bb-117f-4611-b9be-a19a49b1ed8e)
-    (property "Reference" "R47" (at 541.02 283.2099 0)
+    (property "Reference" "R48" (at 541.02 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 541.02 285.1149 0)
@@ -34899,7 +34903,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R47") (unit 1)
+          (reference "R48") (unit 1)
         )
       )
     )
@@ -34908,7 +34912,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 412.115 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cfbb3d81-1ccb-4a32-8cc0-1c27846f7629)
-    (property "Reference" "D29" (at 414.02 289.56 0)
+    (property "Reference" "D57" (at 414.02 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 414.02 292.1 0)
@@ -34945,7 +34949,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D29") (unit 1)
+          (reference "D57") (unit 1)
         )
       )
     )
@@ -35036,7 +35040,7 @@
   (symbol (lib_id "Device:R_Small") (at 297.815 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d121cfad-3926-40f3-af97-4eadbf88815a)
-    (property "Reference" "R73" (at 300.355 442.5949 0)
+    (property "Reference" "R74" (at 300.355 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 300.355 445.1349 0)
@@ -35068,7 +35072,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R73") (unit 1)
+          (reference "R74") (unit 1)
         )
       )
     )
@@ -35121,7 +35125,7 @@
   (symbol (lib_id "Device:R_Small") (at 386.715 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d14074c5-1503-4afb-9c1a-665a98314869)
-    (property "Reference" "R128" (at 389.255 537.8449 0)
+    (property "Reference" "R129" (at 389.255 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 389.255 540.3849 0)
@@ -35153,32 +35157,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R128") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 87.63 167.005 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d2233b98-a99e-4c2a-acac-b897480ae2d5)
-    (property "Reference" "#PWR039" (at 87.63 173.355 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 87.63 170.18 0)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Footprint" "" (at 87.63 167.005 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 87.63 167.005 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6f2a839b-f8fe-4a88-9c78-0c12eabfe6f1))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR039") (unit 1)
+          (reference "R129") (unit 1)
         )
       )
     )
@@ -35288,7 +35267,7 @@
   (symbol (lib_id "Device:R_Small") (at 234.315 579.755 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2fd0c6c-2a97-4597-9f37-4a26674c90bc)
-    (property "Reference" "R150" (at 236.855 579.1199 0)
+    (property "Reference" "R151" (at 236.855 579.1199 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 236.855 581.6599 0)
@@ -35320,7 +35299,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R150") (unit 1)
+          (reference "R151") (unit 1)
         )
       )
     )
@@ -35416,19 +35395,19 @@
     )
   )
 
-  (symbol (lib_id "power:GNDPWR") (at 76.835 185.42 0) (unit 1)
+  (symbol (lib_id "power:GNDPWR") (at 82.55 185.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d375996f-4249-4e37-a97f-a638daafdac6)
-    (property "Reference" "#PWR044" (at 76.835 190.5 0)
+    (property "Reference" "#PWR044" (at 82.55 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GNDPWR" (at 76.2 187.96 0)
+    (property "Value" "GNDPWR" (at 81.915 187.96 0)
       (effects (font (size 0.508 0.508)))
     )
-    (property "Footprint" "" (at 76.835 186.69 0)
+    (property "Footprint" "" (at 82.55 186.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 76.835 186.69 0)
+    (property "Datasheet" "" (at 82.55 186.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0d19974b-6745-49ee-a513-b792b2c687ee))
@@ -35513,7 +35492,7 @@
   (symbol (lib_id "Device:R_Small") (at 310.515 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d3e42260-3027-4004-a16a-7c81dfe6b1bd)
-    (property "Reference" "R92" (at 313.055 474.3449 0)
+    (property "Reference" "R93" (at 313.055 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 313.055 476.8849 0)
@@ -35545,7 +35524,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R92") (unit 1)
+          (reference "R93") (unit 1)
         )
       )
     )
@@ -35604,7 +35583,7 @@
   (symbol (lib_id "Device:R_Small") (at 285.115 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d521bd4c-5266-4782-8881-e168b5eb20be)
-    (property "Reference" "R21" (at 287.02 232.4099 0)
+    (property "Reference" "R22" (at 287.02 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 287.02 234.3149 0)
@@ -35636,7 +35615,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R21") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -35670,7 +35649,7 @@
   (symbol (lib_id "Device:R_Small") (at 158.115 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d5b5e44e-2cb1-4cf4-874a-bf71c34285df)
-    (property "Reference" "R85" (at 160.655 474.3449 0)
+    (property "Reference" "R86" (at 160.655 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 160.655 476.8849 0)
@@ -35702,7 +35681,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R85") (unit 1)
+          (reference "R86") (unit 1)
         )
       )
     )
@@ -35711,7 +35690,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 539.115 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d612cdd8-d28a-4180-ae47-70a6fa509df7)
-    (property "Reference" "D33" (at 541.02 289.56 0)
+    (property "Reference" "D61" (at 541.02 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 541.02 292.1 0)
@@ -35748,7 +35727,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D33") (unit 1)
+          (reference "D61") (unit 1)
         )
       )
     )
@@ -35845,7 +35824,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 126.365 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d74c33be-fbdc-49bf-94f3-5d56c355471d)
-    (property "Reference" "D3" (at 128.27 238.76 0)
+    (property "Reference" "D17" (at 128.27 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 128.27 241.3 0)
@@ -35882,7 +35861,32 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D3") (unit 1)
+          (reference "D17") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND1") (at 822.96 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d74fbf5f-0897-44ff-8f3e-12b14794eb3c)
+    (property "Reference" "#PWR015" (at 822.96 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 822.96 69.85 0)
+      (effects (font (size 0.762 0.762)))
+    )
+    (property "Footprint" "" (at 822.96 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 822.96 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f13c80ed-c098-479a-b3c1-cedd369dd3f0))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -35891,7 +35895,7 @@
   (symbol (lib_id "Device:R_Small") (at 329.565 506.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d766ddc3-468b-4dd3-ac51-6d579529ba1e)
-    (property "Reference" "R109" (at 332.105 506.0949 0)
+    (property "Reference" "R110" (at 332.105 506.0949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 332.105 508.6349 0)
@@ -35923,7 +35927,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R109") (unit 1)
+          (reference "R110") (unit 1)
         )
       )
     )
@@ -36179,7 +36183,7 @@
   (symbol (lib_id "Device:R_Small") (at 316.865 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d96e11bc-d4c4-4f5b-81b5-b2a71c76e37e)
-    (property "Reference" "R40" (at 318.77 283.2099 0)
+    (property "Reference" "R41" (at 318.77 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 318.77 285.1149 0)
@@ -36211,7 +36215,57 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R40") (unit 1)
+          (reference "R41") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND1") (at 65.405 120.65 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid da3a7a73-9dc0-4d1a-98e7-6f79c2ee688f)
+    (property "Reference" "#PWR040" (at 71.755 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND1" (at 69.215 120.65 90)
+      (effects (font (size 0.762 0.762)) (justify right))
+    )
+    (property "Footprint" "" (at 65.405 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 65.405 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e2655d76-820e-4e19-8b05-e9231bfd8a24))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR040") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 80.645 160.655 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid da462565-076e-4969-8179-d6d68f07c69f)
+    (property "Reference" "#PWR035" (at 74.295 160.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 77.47 160.655 90)
+      (effects (font (size 0.7874 0.7874)) (justify right))
+    )
+    (property "Footprint" "" (at 80.645 160.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 80.645 160.655 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 62865f12-6c4c-447e-b264-5dd509f62a38))
+    (instances
+      (project "athena"
+        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -36271,7 +36325,7 @@
   (symbol (lib_id "Device:R_Small") (at 310.515 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dab2d5be-124a-487d-b5e0-1a55067cc57e)
-    (property "Reference" "R143" (at 313.055 578.4849 0)
+    (property "Reference" "R144" (at 313.055 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 313.055 581.0249 0)
@@ -36303,7 +36357,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R143") (unit 1)
+          (reference "R144") (unit 1)
         )
       )
     )
@@ -36353,7 +36407,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 539.115 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dabb6bb8-3719-4233-97e7-c7702a2ff843)
-    (property "Reference" "D16" (at 541.02 238.76 0)
+    (property "Reference" "D30" (at 541.02 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 541.02 241.3 0)
@@ -36390,7 +36444,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D16") (unit 1)
+          (reference "D30") (unit 1)
         )
       )
     )
@@ -36399,7 +36453,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 348.615 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db062053-02c2-4c4c-b147-bfc3cb7f9129)
-    (property "Reference" "D10" (at 350.52 238.76 0)
+    (property "Reference" "D24" (at 350.52 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 350.52 241.3 0)
@@ -36436,7 +36490,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D10") (unit 1)
+          (reference "D24") (unit 1)
         )
       )
     )
@@ -36552,7 +36606,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.9 412.75 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dbbeda4c-b3d9-4c7b-b986-6cda899af60b)
-    (property "Reference" "R58" (at 217.805 411.4799 0)
+    (property "Reference" "R59" (at 217.805 411.4799 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 217.805 413.3849 0)
@@ -36584,7 +36638,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R58") (unit 1)
+          (reference "R59") (unit 1)
         )
       )
     )
@@ -37100,7 +37154,7 @@
   (symbol (lib_id "Device:R_Small") (at 570.865 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid df62f0d3-00c4-431a-b687-e6b6eabf9993)
-    (property "Reference" "R48" (at 572.77 283.2099 0)
+    (property "Reference" "R49" (at 572.77 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 572.77 285.1149 0)
@@ -37132,7 +37186,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R48") (unit 1)
+          (reference "R49") (unit 1)
         )
       )
     )
@@ -37351,7 +37405,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 507.365 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e2225ad8-f71f-417e-84be-7cf3ad2bde74)
-    (property "Reference" "D15" (at 509.27 238.76 0)
+    (property "Reference" "D29" (at 509.27 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 509.27 241.3 0)
@@ -37388,7 +37442,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D15") (unit 1)
+          (reference "D29") (unit 1)
         )
       )
     )
@@ -37397,7 +37451,7 @@
   (symbol (lib_id "Device:R_Small") (at 196.215 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e234f4fe-c700-4104-af9e-6336a31892e3)
-    (property "Reference" "R103" (at 198.755 507.3651 0)
+    (property "Reference" "R104" (at 198.755 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 198.755 504.8251 0)
@@ -37429,7 +37483,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R103") (unit 1)
+          (reference "R104") (unit 1)
         )
       )
     )
@@ -37515,7 +37569,7 @@
   (symbol (lib_id "Device:R_Small") (at 228.6 383.54 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e366eee7-4480-4870-aa35-ebfa4cd4153e)
-    (property "Reference" "R50" (at 226.06 382.9049 0)
+    (property "Reference" "R51" (at 226.06 382.9049 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 226.06 385.4449 0)
@@ -37547,7 +37601,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R50") (unit 1)
+          (reference "R51") (unit 1)
         )
       )
     )
@@ -37645,7 +37699,7 @@
   (symbol (lib_id "Device:R_Small") (at 253.365 284.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e49c9aae-4597-41d2-b6e6-b963f11b52a5)
-    (property "Reference" "R38" (at 255.27 283.2099 0)
+    (property "Reference" "R39" (at 255.27 283.2099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 255.27 285.1149 0)
@@ -37677,7 +37731,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R38") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -37686,7 +37740,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 380.365 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5107482-44ff-4213-ab83-b2d67f6a6557)
-    (property "Reference" "D11" (at 382.27 238.76 0)
+    (property "Reference" "D25" (at 382.27 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 382.27 241.3 0)
@@ -37723,7 +37777,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D11") (unit 1)
+          (reference "D25") (unit 1)
         )
       )
     )
@@ -37928,7 +37982,7 @@
   (symbol (lib_id "Device:R_Small") (at 57.15 444.5 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e7b3aac4-6fc7-494e-a4da-45dd5dd30e4b)
-    (property "Reference" "R77" (at 55.245 443.2299 0)
+    (property "Reference" "R78" (at 55.245 443.2299 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 55.245 445.1349 0)
@@ -37960,7 +38014,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R77") (unit 1)
+          (reference "R78") (unit 1)
         )
       )
     )
@@ -38033,7 +38087,7 @@
   (symbol (lib_id "Device:R_Small") (at 221.615 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e814247c-5140-4fa2-a557-a9413a45e0e1)
-    (property "Reference" "R19" (at 223.52 232.4099 0)
+    (property "Reference" "R20" (at 223.52 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 223.52 234.3149 0)
@@ -38065,7 +38119,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R19") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -38255,7 +38309,7 @@
   (symbol (lib_id "Device:R_Small") (at 424.815 506.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e8fca401-2da2-4f53-8b58-36c52b127d47)
-    (property "Reference" "R110" (at 427.355 506.0949 0)
+    (property "Reference" "R111" (at 427.355 506.0949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 427.355 508.6349 0)
@@ -38287,32 +38341,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R110") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GNDPWR") (at 35.56 170.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e938c007-5c9e-41fa-b96c-2226c72addb5)
-    (property "Reference" "#PWR040" (at 35.56 175.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDPWR" (at 34.925 172.72 0)
-      (effects (font (size 0.508 0.508)))
-    )
-    (property "Footprint" "" (at 35.56 171.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 35.56 171.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f59b8812-a2e7-4549-ae67-33dc85b7381b))
-    (instances
-      (project "athena"
-        (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "#PWR040") (unit 1)
+          (reference "R111") (unit 1)
         )
       )
     )
@@ -38413,7 +38442,7 @@
   (symbol (lib_id "Device:D") (at 793.75 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb066a88-3d71-47d9-827c-658c6702ac3d)
-    (property "Reference" "D38" (at 799.2302 237.49 0)
+    (property "Reference" "D5" (at 799.2302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 796.9315 237.49 0)
@@ -38448,7 +38477,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D38") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -38457,7 +38486,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 285.115 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb51c41a-0e9b-444d-8b92-3ecaaaa1e421)
-    (property "Reference" "D25" (at 287.02 289.56 0)
+    (property "Reference" "D53" (at 287.02 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 287.02 292.1 0)
@@ -38494,7 +38523,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D25") (unit 1)
+          (reference "D53") (unit 1)
         )
       )
     )
@@ -38566,7 +38595,7 @@
   (symbol (lib_id "Device:R_Small") (at 329.565 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ebdc6d78-e199-4941-be1b-456f5fd45d5d)
-    (property "Reference" "R93" (at 332.105 474.3449 0)
+    (property "Reference" "R94" (at 332.105 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 332.105 476.8849 0)
@@ -38598,7 +38627,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R93") (unit 1)
+          (reference "R94") (unit 1)
         )
       )
     )
@@ -38658,7 +38687,7 @@
   (symbol (lib_id "Device:R_Small") (at 272.415 474.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec0c469b-8b2d-40a9-806e-9e9800e2799a)
-    (property "Reference" "R90" (at 274.955 474.3449 0)
+    (property "Reference" "R91" (at 274.955 474.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 274.955 476.8849 0)
@@ -38690,7 +38719,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R90") (unit 1)
+          (reference "R91") (unit 1)
         )
       )
     )
@@ -38699,7 +38728,7 @@
   (symbol (lib_id "Device:R_Small") (at 310.515 601.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec22d12b-cdff-4f7f-a9e7-8ef5642763fc)
-    (property "Reference" "R157" (at 313.055 601.3449 0)
+    (property "Reference" "R158" (at 313.055 601.3449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 313.055 603.8849 0)
@@ -38731,7 +38760,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R157") (unit 1)
+          (reference "R158") (unit 1)
         )
       )
     )
@@ -38781,7 +38810,7 @@
   (symbol (lib_id "Device:R_Small") (at 215.265 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec830fa3-8b15-4cec-a928-1250be86a0a9)
-    (property "Reference" "R121" (at 217.805 537.8449 0)
+    (property "Reference" "R122" (at 217.805 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 217.805 540.3849 0)
@@ -38813,7 +38842,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R121") (unit 1)
+          (reference "R122") (unit 1)
         )
       )
     )
@@ -38917,7 +38946,7 @@
   (symbol (lib_id "Device:R_Small") (at 355.6 393.7 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ed743c19-5b6f-4d1d-82f1-d1245d0f6e57)
-    (property "Reference" "R53" (at 358.14 394.3351 0)
+    (property "Reference" "R54" (at 358.14 394.3351 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 358.14 391.7951 0)
@@ -38949,7 +38978,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R53") (unit 1)
+          (reference "R54") (unit 1)
         )
       )
     )
@@ -39188,7 +39217,7 @@
   (symbol (lib_id "Device:R_Small") (at 405.765 515.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f06df7b9-e946-49aa-ae07-95cc356154d5)
-    (property "Reference" "R113" (at 408.305 514.9849 0)
+    (property "Reference" "R114" (at 408.305 514.9849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 408.305 517.5249 0)
@@ -39220,7 +39249,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R113") (unit 1)
+          (reference "R114") (unit 1)
         )
       )
     )
@@ -39254,7 +39283,7 @@
   (symbol (lib_id "Device:R_Small") (at 291.465 579.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f12f4002-e696-443a-bcb5-4650195c1eef)
-    (property "Reference" "R142" (at 294.005 578.4849 0)
+    (property "Reference" "R143" (at 294.005 578.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 294.005 581.0249 0)
@@ -39286,7 +39315,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R142") (unit 1)
+          (reference "R143") (unit 1)
         )
       )
     )
@@ -39444,7 +39473,7 @@
   (symbol (lib_id "Device:D") (at 895.35 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f30b9f98-3b60-4eb8-9446-c7effa895be3)
-    (property "Reference" "D56" (at 900.8302 275.59 0)
+    (property "Reference" "D40" (at 900.8302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 898.5315 275.59 0)
@@ -39479,7 +39508,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D56") (unit 1)
+          (reference "D40") (unit 1)
         )
       )
     )
@@ -39514,7 +39543,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 158.115 299.085 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f3ea9a11-45b0-49a8-b276-da35d619813c)
-    (property "Reference" "D21" (at 160.02 289.56 0)
+    (property "Reference" "D49" (at 160.02 289.56 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 160.02 292.1 0)
@@ -39551,7 +39580,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D21") (unit 1)
+          (reference "D49") (unit 1)
         )
       )
     )
@@ -39792,7 +39821,7 @@
   (symbol (lib_id "Device:R_Small") (at 278.765 443.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f65006f4-a349-43d6-a6ad-795697ddfcae)
-    (property "Reference" "R72" (at 281.305 442.5949 0)
+    (property "Reference" "R73" (at 281.305 442.5949 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 281.305 445.1349 0)
@@ -39824,7 +39853,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R72") (unit 1)
+          (reference "R73") (unit 1)
         )
       )
     )
@@ -40240,7 +40269,7 @@
   (symbol (lib_id "Device:D") (at 742.95 237.49 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fb33c2b9-1baa-4b17-97de-b59b2040c0b4)
-    (property "Reference" "D36" (at 748.4302 237.49 0)
+    (property "Reference" "D3" (at 748.4302 237.49 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 746.1315 237.49 0)
@@ -40275,7 +40304,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D36") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -40347,7 +40376,7 @@
   (symbol (lib_id "Device:R_Small") (at 310.515 538.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fc486369-bd62-4de4-8ae5-d34fccc801c7)
-    (property "Reference" "R126" (at 313.055 537.8449 0)
+    (property "Reference" "R127" (at 313.055 537.8449 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 313.055 540.3849 0)
@@ -40379,7 +40408,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R126") (unit 1)
+          (reference "R127") (unit 1)
         )
       )
     )
@@ -40430,7 +40459,7 @@
   (symbol (lib_id "Device:R_Small") (at 52.705 257.81 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fc61f821-81c3-49ae-882f-521483ac916b)
-    (property "Reference" "R33" (at 52.705 255.905 90)
+    (property "Reference" "R34" (at 52.705 255.905 90)
       (effects (font (size 0.7874 0.7874)))
     )
     (property "Value" "10k" (at 52.705 257.81 90)
@@ -40462,7 +40491,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R33") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -40496,7 +40525,7 @@
   (symbol (lib_id "Device:R_Small") (at 139.065 506.73 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fcf605ca-6925-494e-999b-0bdce11044f3)
-    (property "Reference" "R100" (at 141.605 507.3651 0)
+    (property "Reference" "R101" (at 141.605 507.3651 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 141.605 504.8251 0)
@@ -40528,7 +40557,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R100") (unit 1)
+          (reference "R101") (unit 1)
         )
       )
     )
@@ -40537,7 +40566,7 @@
   (symbol (lib_id "Device:R_Small") (at 348.615 233.68 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd167e53-9555-498d-9e57-2fd326e6848d)
-    (property "Reference" "R23" (at 350.52 232.4099 0)
+    (property "Reference" "R24" (at 350.52 232.4099 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "5.1R" (at 350.52 234.3149 0)
@@ -40569,7 +40598,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "R23") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -40695,7 +40724,7 @@
   (symbol (lib_id "acheron_Symbols:WS2812B-2020") (at 285.115 248.285 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fe78f4b4-fcb7-4dbb-9164-e8584e623165)
-    (property "Reference" "D8" (at 287.02 238.76 0)
+    (property "Reference" "D22" (at 287.02 238.76 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Value" "WS2812C-2020" (at 287.02 241.3 0)
@@ -40732,7 +40761,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D8") (unit 1)
+          (reference "D22") (unit 1)
         )
       )
     )
@@ -40741,7 +40770,7 @@
   (symbol (lib_id "Device:D") (at 793.75 275.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fea6a11f-4ddb-47bf-8806-165cbcd7dbeb)
-    (property "Reference" "D52" (at 799.2302 275.59 0)
+    (property "Reference" "D36" (at 799.2302 275.59 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1N4148W" (at 796.9315 275.59 0)
@@ -40776,7 +40805,7 @@
     (instances
       (project "athena"
         (path "/9ce6b20d-0a6c-402a-b232-5eafd6242eb3"
-          (reference "D52") (unit 1)
+          (reference "D36") (unit 1)
         )
       )
     )
